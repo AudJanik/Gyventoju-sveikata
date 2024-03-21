@@ -1,0 +1,681 @@
+﻿kintamojo_pavadinimas,kintamojo_reikšmių_kodai,kintamojo_reikšmių_aprašymas,kintamojo_aprašymas,objectid
+,,,TECHNINIAI TYRIMO KINTAMIEJI,1
+,,,,2
+PID,,,Respondento identifikacinis numeris,3
+WGT,,,Asmens populiacijos svoris,4
+PROXY,1,Pats respondentas,Dalyvavimo tyrime pobūdis,5
+,2,Už respondentą atsakė kitas to paties namų ūkio narys  ,,6
+,3,"Už respondentą atsakė kitas jį prižiūrintis, namų ūkiui nepriklausantis, asmuo ",,7
+REFDATE,YYYYMMDD,"YYYY (metai):2019; MM (mėnuo): 01-12; DD (diena): 01-31",Apklausos ataskaitinė data,8
+,,,,9
+,,,PAGRINDINIAI SOCIALINIAI KINTAMIEJI,10
+,,,,11
+SEX,1,Vyras,Lytis,12
+,2,Moteris,,13
+AGE,15-99,Sukakusių metų skaičius ,Amžius,14
+BIRTHPLACE,10,Lietuvos Respublika,Gimimo šalis,15
+,20,Kita šalis,,16
+CITIZEN,10,Lietuvos Respublikos,Pilietybė,17
+,20,Kitos šalies ,,18
+AP,1,Alytaus apskritis,Apskritys,19
+,2,Kauno apskritis,,20
+,3,Klaipėdos apskritis,,21
+,4,Marijampolės apskritis,,22
+,5,Panevėžio apskritis,,23
+,6,Šiaulių apskritis,,24
+,7,Tauragės apskritis,,25
+,8,Telšių apskritis,,26
+,9,Utenos apskritis,,27
+,10,Vilniaus apskritis,,28
+DEG_URB,1,Tankiai apgyvendinta vietovė,Urbanizacijos lygis,29
+,2,Vidutiniškai apgyvendinta vietovė,,30
+,3,Retai apgyvendinta vietovė,,31
+M_K,1,Miestas,Miestas ar kaimas,32
+,2,Kaimas,,33
+MARSTALEGAL,1,Niekada nebuvote vedęs (ištekėjusi),Juridinė santuokinė padėtis,34
+,2,Vedęs (ištekėjusi),,35
+,3,Našlys (-ė),,36
+,4,Išsituokęs (-usi),,37
+HATLEVEL,0,Ikimokyklinis ugdymas (ISCED 0),Įgytas aukščiausias išsilavinimas (ISCED 2011),38
+,1,Pradinis išsilavinimas (ISCED 1),,39
+,2,Pagrindinis išsilavinimas (ISCED 2),,40
+,3,Vidurinis išsilavinimas (ISCED 3),,41
+,4,Profesinis mokymas turint vidurinį išsilavinimą (ISCED 4),,42
+,6,Bakalauro studijos (ISCED 6),,43
+,7,Magistrantūros studijos (ISCED 7),,44
+,8,Doktorantūra (ISCED 8),,45
+MAINSTAT,10,Užimtas asmuo,Ekonominio aktyvumo statusas,46
+,20,Bedarbis (-ė) ,,47
+,30,Nedirbantis (-i) senatvės pensininkas (-ė),,48
+,40,Dėl negalios nedirbantis asmuo,,49
+,50,"Mokinys (-ė), nedirbantis (-i) studentas (-ė)",,50
+,60,Namų šeimininkas (-ė) ,,51
+,70,Atliekantis privalomąją karo ar alternatyviąją tarnybą,,52
+,80,Kitas neaktyvus asmuo ,,53
+FT_PT,1,Visą,Dirba visą ar ne visą darbo dienos ar savaitės laiką,54
+,2,Ne visą,,55
+,-2,Netaikoma,,56
+JOBSTAT,11,"Savarankiškai dirbantis asmuo, turintis samdomųjų darbuotojų",Užimtumo statusas,57
+,12,"Savarankiškai dirbantis asmuo, neturintis samdomųjų darbuotojų",,58
+,20,Samdomasis darbuotojas,,59
+,30,Padedantis ūkyje ar šeimos versle ir atlyginimo negaunantis šeimos narys,,60
+,-2,Netaikoma,,61
+JOBISCO," 11 - 96; 0",Profesijos kodas (ISCO-08) pagrindiniame darbe,Profesija,62
+,-2,Netaikoma,,63
+LOCNACE,A - U,Statistinis ekonominės veiklos rūšių klasifikatorius (NACE 2 red.),Pagrindinė darbovietės ekonominės veiklos rūšis,64
+,-2,Netaikoma,,65
+HHNBPERS,0 - 98,Skaičius,Namų ūkio narių skaičius (įskaitant respondentą),66
+HHNBPERS_0_13,0 - 98,Skaičius,13 metų ir jaunesnių vaikų skaičius namų ūkyje,67
+HHTYPE,10,Vieno asmens namų ūkis,Namų ūkio tipas,68
+,21,Viena motina ar vienas tėvas su vaiku (-ais) iki 25 metų amžiaus ,,69
+,22,"Viena motina ar vienas tėvas, su vaikais 25 metų amžiaus ir vyresniais ",,70
+,31,Pora be vaikų,,71
+,32,Pora su bent vienu vaiku iki 25 metų amžiaus,,72
+,33,"Pora, kurios visi vaikai 25 metų amžiaus ir vyresni",,73
+,40,Kita,,74
+HHINCOME,1,Pirmoji pajamų kvintilinė grupė,Namų ūkio grynosios mėnesio ekvivalentinės pajamos,75
+,2,Antroji pajamų kvintilinė grupė,,76
+,3,Trečioji pajamų kvintilinė grupė,,77
+,4,Ketvirtoji pajamų kvintilinė grupė,,78
+,5,Penktoji pajamų kvintilinė grupė,,79
+,-1,Nenurodyta,,80
+,,,,81
+,,,SVEIKATOS KINTAMIEJI,82
+,,,,83
+,,,Sveikatos būklė,84
+,,,,85
+HS1,1,Labai gera,Bendra sveikatos būklė,86
+,2,Gera,,87
+,3,Vidutiniška,,88
+,4,Bloga,,89
+,5,Labai bloga,,90
+,-1,Nenurodyta,,91
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,92
+HS2,1,Taip,Sergate kokia nors lėtine (chroniška) liga arba turite ilgalaikių sveikatos sutrikimų? ,93
+,2,Ne,,94
+HS3,1,Labai apribota,Veiklos apribojimas dėl sveikatos sutrikimų bent 6 mėn. per pastarąjį laiką,95
+,2,Šiek tiek apribota,,96
+,3,Visiškai neapribota,,97
+,,,,98
+,,,Ligos ir lėtinės būklės,99
+,,,,100
+CD1A,1,Taip,Per pastaruosius 12 mėn. sirgote astma (įskaitant alerginę),101
+,2,Ne,,102
+CD1B,1,Taip,"Per pastaruosius 12 mėn. sirgote lėtiniu bronchitu, lėtine obstrukcine plaučių liga ar emfizema",103
+,2,Ne,,104
+CD1C,1,Taip,Per pastaruosius 12 mėn. patyrėte miokardo infarktą (širdies smūgį) arba jo lėtines pasekmes ,105
+,2,Ne,,106
+CD1D,1,Taip,Per pastaruosius 12 mėn. sirgote koronarine širdies liga arba krūtinės angina,107
+,2,Ne,,108
+CD1E,1,Taip,Per pastaruosius 12 mėn. buvo padidėjęs kraujospūdis,109
+,2,Ne,,110
+CD1F,1,Taip,"Per pastaruosius 12 mėn. patyrėte insultą (kraujo išsiliejimą į smegenis, smegenų trombozę) arba lėtines jo pasekmes",111
+,2,Ne,,112
+CD1G,1,Taip,Per pastaruosius 12 mėn. sirgote artroze (išskyrus artritą),113
+,2,Ne,,114
+CD1H,1,Taip,Per pastaruosius 12 mėn. sirgote apatinės nugaros dalies liga ar turėjo kitą lėtinę nugaros ydą,115
+,2,Ne,,116
+CD1I,1,Taip,Per pastaruosius 12 mėn. sirgote kaklo srities liga ar turėjo kitą lėtinę kaklo ydą,117
+,2,Ne,,118
+CD1J,1,Taip,Per pastaruosius 12 mėn. sirgote cukriniu diabetu,119
+,2,Ne,,120
+CD1K,1,Taip," Per pastaruosius 12 mėn. sirgote alergija, tokia kaip alerginė sloga (šienligė), akių uždegimas, dermatitas, alergija maistui ar kita alergija (išskyrus alerginę astmą) ",121
+,2,Ne,,122
+CD1L,1,Taip,Per pastaruosius 12 mėn. sirgote kepenų ciroze,123
+,2,Ne,,124
+CD1M,1,Taip,"Per pastaruosius 12 mėn. sirgote šlapimo nelaikymu, turėjo šlapimo pūslės kontrolės problemų",125
+,2,Ne,,126
+CD1N,1,Taip,Per pastaruosius 12 mėn. sirgote inkstų ligomis ,127
+,2,Ne,,128
+CD1O,1,Taip,Per pastaruosius 12 mėn. sirgote depresija,129
+,2,Ne,,130
+CD1P,1,Taip,"Per pastaruosius 12 mėn. buvo padidėjęs cholesterolio, kraujo lipidų ar trigliceridų kiekis kraujyje ",131
+,2,Ne,,132
+CD2,1,Labai gera,Bendra dantų ir dantenų būklė,133
+,2,Gera,,134
+,3,Vidutiniška,,135
+,4,Bloga,,136
+,5,Labai bloga,,137
+,-1,Nenurodyta,,138
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,139
+,,,,140
+,,,Nelaimingi atsitikimai ir sužeidimai,141
+,,,,142
+AC1A,1,Taip,Per pastaruosius 12 mėn. buvote patekęs (-usi) į kelių eismo įvykį,143
+,2,Ne,,144
+AC1B,1,Taip,Per pastaruosius 12 mėn. buvote patekęs (-usi) į nelaimingą atsitikimą namuose,145
+,2,Ne,,146
+AC1C,1,Taip,Per pastaruosius 12 mėn. buvote patekęs (-usi) į nelaimingą atsitikimą laisvalaikio metu,147
+,2,Ne,,148
+AC2,1,Buvote paguldytas (-a) į ligoninę ar kitą sveikatos priežiūros įstaigą ,Rimčiausio medicininio įsikišimo atvejis dėl sunkiausio nelaimingo atsitikimo per pastaruosius 12 mėn.,149
+,2,Buvo suteikta gydytojo ar slaugytojo ambulatorinė pagalba,,150
+,3,Sveikatos priežiūros specialisto pagalbos neprireikė,,151
+,-2,Netaikoma,,152
+,,,,153
+,,,Neatvykimas į darbą (dėl sveikatos problemų),154
+,,,,155
+AW1,1,Taip,Per pastaruosius 12 mėn. nedirbote dėl savo sveikatos problemų,156
+,2,Ne,,157
+,-2,Netaikoma,,158
+AW2,1 - 365,Dienų skaičius,Kiek iš viso dienų nedirbote per pastaruosius 12 mėn. dėl savo sveikatos problemų?,159
+,-2,Netaikoma,,160
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,161
+,,,,162
+,,,Fizinių ir jutimo funkcijų sutrikimai,163
+,,,,164
+PL1,1,Taip  ,Nešiojate akinius ar kontaktinius lęšius,165
+,2,Ne  ,,166
+,3,Visai nematote ,,167
+,,,,168
+PL2,1,Matote gerai,Jei PL1 = 1: Ar prastai matote net nešiodamas (-a) akinius ar kontaktinius lęšius? / Jei PL1 = 2: Ar prastai matote (ar turite regėjimo sutrikimų)?,169
+,2,Šiek tiek prastai ,,170
+,3,Labai prastai ,,171
+,4,Visai nematote ,,172
+,-2,Netaikoma,,173
+PL3,1,Taip  ,Naudojatės klausos aparatu,174
+,2,Ne  ,,175
+,3,Visai negirdite ,,176
+PL4,1,Girdite gerai,"Jei PL3 = 1: Ar bendraudamas (-a) su kitu asmeniu, kai kambaryje tylu, prastai girdite, net jei naudojatės klausos aparatu? / Jei PL3 = 2: Ar bendraudamas (-a) su kitu asmeniu, kai kambaryje tylu, prastai girdite? ",177
+,2,Šiek tiek prastai ,,178
+,3,Labai prastai  ,,179
+,4,Visai negirdite ,,180
+,-2,Netaikoma,,181
+PL5,1,Girdite gerai,"Jei PL3 = 1: Ar bendraudamas (-a) su kitu asmeniu, kai kambaryje triukšminga, prastai girdite, net jei naudojatės klausos aparatu? / Jei PL3 = 2: Ar bendraudamas (-a) su kitu asmeniu, kai kambaryje triukšminga, prastai girdite?",182
+,2,Šiek tiek prastai ,,183
+,3,Labai prastai  ,,184
+,4,Visai negirdite ,,185
+,-2,Netaikoma,,186
+PL6,1,Nesunku  ,"Ar sunku nueiti pusės kilometro atstumą lygiu paviršiumi be jokios pagalbos (pvz., lazdos, ramento, kito asmens pagalbos)? ",187
+,2,Šiek tiek sunku ,,188
+,3,Labai sunku  ,,189
+,4,Visai negalite to padaryti ,,190
+PL7,1,Nesunku  ,Ar sunku užlipti ar nulipti 12 laiptelių? ,191
+,2,Šiek tiek sunku ,,192
+,3,Labai sunku  ,,193
+,4,Visai negalite to padaryti ,,194
+PL8,1,Nesunku  ,Ar sunku įsiminti ar sutelkti dėmesį? ,195
+,2,Šiek tiek sunku ,,196
+,3,Labai sunku  ,,197
+,4,Visai negalite to padaryti ,,198
+PL9,1,Nesunku  ,Ar sunku atsikąsti ir kramtyti kietą maistą? ,199
+,2,Šiek tiek sunku ,,200
+,3,Labai sunku  ,,201
+,4,Visai negalite to padaryti ,,202
+,-2,Netaikoma (Klausimas skirtas 55 metų ir vyresniems asmenims),,203
+,,,,204
+,,Atsakė 55 metų amžiaus ir vyresni respondentai,Savipriežiūra,205
+,,,,206
+PC1A,1,Nesunku,Ar sunku pavalgyti?,207
+,2,Šiek tiek sunku,,208
+,3,Labai sunku,,209
+,4,Visai negalite atlikti šio veiksmo ,,210
+,-2,Netaikoma,,211
+PC1B,1,Nesunku,"Ar sunku atsigulti į lovą ar atsikelti iš jos, atsisėsti ant kėdės ar pasikelti nuo jos?",212
+,2,Šiek tiek sunku,,213
+,3,Labai sunku,,214
+,4,Visai negalite atlikti šio veiksmo ,,215
+,-2,Netaikoma,,216
+PC1C,1,Nesunku,Ar sunku apsirengti ir nusirengti?,217
+,2,Šiek tiek sunku,,218
+,3,Labai sunku,,219
+,4,Visai negalite atlikti šio veiksmo ,,220
+,-2,Netaikoma,,221
+PC1D,1,Nesunku,Ar sunku naudotis tualetu?,222
+,2,Šiek tiek sunku,,223
+,3,Labai sunku,,224
+,4,Visai negalite atlikti šio veiksmo ,,225
+,-2,Netaikoma,,226
+PC1E,1,Nesunku,Ar sunku maudytis vonioje ar duše?,227
+,2,Šiek tiek sunku,,228
+,3,Labai sunku,,229
+,4,Visai negalite atlikti šio veiksmo ,,230
+,-2,Netaikoma,,231
+PC2,1,"Taip, bent vieną iš šių veiksmų  ",Ar paprastai kas nors padeda atlikti šiuos veiksmus (PC1A - PC1E)? ,232
+,2,Ne  ,,233
+,-2,Netaikoma,,234
+PC3,1,"Taip, bent vienam iš šių veiksmų  ",Jei PC2 = 1: Ar reikia daugiau pagalbos? / Jei PC2 = 2: Ar reikalinga pagalba?,235
+,2,Ne  ,,236
+,-1,Nenurodyta,,237
+,-2,Netaikoma,,238
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,239
+,,,,240
+,,Atsakė 55 metų amžiaus ir vyresni respondentai,Namų ruošos darbai,241
+,,,,242
+HA1A,1,Nesunku,Ar sunku ruošti valgį?,243
+,2,Šiek tiek sunku,,244
+,3,Labai sunku,,245
+,4,Visai negalite to padaryti,,246
+,5,Netaikytina (niekada nebandėte ar nėra būtinybės),,247
+,-2,Netaikoma,,248
+HA1B,1,Nesunku,Ar sunku naudotis telefonu?,249
+,2,Šiek tiek sunku,,250
+,3,Labai sunku,,251
+,4,Visai negalite to padaryti,,252
+,5,Netaikytina (niekada nebandėte ar nėra būtinybės),,253
+,-2,Netaikoma,,254
+HA1C,1,Nesunku,Ar sunku apsipirkti?,255
+,2,Šiek tiek sunku,,256
+,3,Labai sunku,,257
+,4,Visai negalite to padaryti,,258
+,5,Netaikytina (niekada nebandėte ar nėra būtinybės),,259
+,-2,Netaikoma,,260
+HA1D,1,Nesunku,Ar sunku vartoti vaistus?,261
+,2,Šiek tiek sunku,,262
+,3,Labai sunku,,263
+,4,Visai negalite to padaryti,,264
+,5,Netaikytina (niekada nebandėte ar nėra būtinybės),,265
+,-2,Netaikoma,,266
+HA1E,1,Nesunku,Ar sunku atlikti lengvus namų ruošos darbus?,267
+,2,Šiek tiek sunku,,268
+,3,Labai sunku,,269
+,4,Visai negalite to padaryti,,270
+,5,Netaikytina (niekada nebandėte ar nėra būtinybės),,271
+,-2,Netaikoma,,272
+HA1F,1,Nesunku,Ar sunku retkarčiais atlikti sunkius namų ruošos darbus?,273
+,2,Šiek tiek sunku,,274
+,3,Labai sunku,,275
+,4,Visai negalite to padaryti,,276
+,5,Netaikytina (niekada nebandėte ar nėra būtinybės),,277
+,-2,Netaikoma,,278
+HA1G,1,Nesunku,Ar sunku tvarkyti finansus ir kasdienius reikalus?,279
+,2,Šiek tiek sunku,,280
+,3,Labai sunku,,281
+,4,Visai negalite to padaryti,,282
+,5,Netaikytina (niekada nebandėte ar nėra būtinybės),,283
+,-2,Netaikoma,,284
+HA2,1,"Taip, bent vieną iš šių darbų ",Ar paprastai kas nors padeda atlikti šiuos darbus (HA1A - HA1G)? ,285
+,2,Ne  ,,286
+,-2,Netaikoma,,287
+HA3,1,"Taip, bent vienam iš šių darbų ",Jei HA2 = 1: Ar reikia daugiau pagalbos? / Jei HA2 = 2: Ar reikalinga pagalba?,288
+,2,Ne  ,,289
+,-1,Nenurodyta,,290
+,-2,Netaikoma,,291
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,292
+,,,,293
+,,,Skausmas,294
+,,,,295
+PN1,1,Jokio,Kūno skausmo intensyvumas per pastarąsias 4 sav.,296
+,2,Labai silpnas ,,297
+,3,Silpnas,,298
+,4,Vidutinis,,299
+,5,Stiprus,,300
+,6,Labai stiprus,,301
+,-1,Nenurodyta,,302
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,303
+PN2,1,Tokių atvejų nebuvo  ,"Ar per pastarąsias 4 savaites skausmas trukdė vykdyti įprastą veiklą (tiek dirbti ne namie, tiek atlikti namų ruošos darbus)? ",304
+,2,Šiek tiek trukdė ,,305
+,3,Vidutiniškai trukdė ,,306
+,4,Ganėtinai trukdė ,,307
+,5,Labai trukdė ,,308
+,-1,Nenurodyta,,309
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,310
+,,,,311
+,,,Psichikos sveikata,312
+,,,,313
+MH1A,1,Tokių atvejų nebuvo,Per pastarąsias 2 sav. įprasta veikla mažai domino ar teikė mažai malonumo,314
+,2,Keletą dienų,,315
+,3,Daugiau kaip savaitę,,316
+,4,Beveik kasdien,,317
+,-1,Nenurodyta,,318
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,319
+MH1B,1,Tokių atvejų nebuvo,"Per pastarąsias 2 sav. jautėtės nusiminęs (-usi), prislėgtas (-a) ar nusivylęs (-usi)",320
+,2,Keletą dienų,,321
+,3,Daugiau kaip savaitę,,322
+,4,Beveik kasdien,,323
+,-1,Nenurodyta,,324
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,325
+MH1C,1,Tokių atvejų nebuvo,"Per pastarąsias 2 sav.buvo sunku užmigti, kankino nemiga arba miegojote per ilgai",326
+,2,Keletą dienų,,327
+,3,Daugiau kaip savaitę,,328
+,4,Beveik kasdien,,329
+,-1,Nenurodyta,,330
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,331
+MH1D,1,Tokių atvejų nebuvo,"Per pastarąsias 2 sav. jautėte nuovargį, energijos trūkumą",332
+,2,Keletą dienų,,333
+,3,Daugiau kaip savaitę,,334
+,4,Beveik kasdien,,335
+,-1,Nenurodyta,,336
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,337
+MH1E,1,Tokių atvejų nebuvo,Per pastarąsias 2 sav. neturėjote apetito arba persivalgėte,338
+,2,Keletą dienų,,339
+,3,Daugiau kaip savaitę,,340
+,4,Beveik kasdien,,341
+,-1,Nenurodyta,,342
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,343
+MH1F,1,Tokių atvejų nebuvo,"Per pastarąsias 2 sav. jautėtės blogai, manėte, kad esate nevykėlis (-ė), nuvylėte savo šeimą arba nusivylėte savimi ",344
+,2,Keletą dienų,,345
+,3,Daugiau kaip savaitę,,346
+,4,Beveik kasdien,,347
+,-1,Nenurodyta,,348
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,349
+MH1G,1,Tokių atvejų nebuvo,"Per pastarąsias 2 sav. buvo sunku susitelkti kokiai nors veiklai, pvz., skaityti laikraštį ar žiūrėti televizorių",350
+,2,Keletą dienų,,351
+,3,Daugiau kaip savaitę,,352
+,4,Beveik kasdien,,353
+,-1,Nenurodyta,,354
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,355
+MH1H,1,Tokių atvejų nebuvo,"Per pastarąsias 2 sav. judėjote ar kalbėjote taip lėtai, kad kiti žmonės atkreipė į tai dėmesį. Arba atvirkščiai – buvote toks (-ia) neramus (-i) ir nenustygstantis (-i), todėl judėjote žymiai daugiau nei įprastai",356
+,2,Keletą dienų,,357
+,3,Daugiau kaip savaitę,,358
+,4,Beveik kasdien,,359
+,-1,Nenurodyta,,360
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,361
+,,,,362
+,,,SVEIKATOS PRIEŽIŪRA,363
+,,,,364
+,,,Stacionaro ar dienos stacionaro paslaugos,365
+,,,,366
+HO12,1 - 365,Naktų skaičius,Ligoninėje per pastaruosius 12 mėn. praleistų naktų skaičius,367
+HO34,1 - 365,Kartų skaičius,Gulėjimo dienos stacionare per pastaruosius 12 mėn. atvejų skaičius,368
+,,,,369
+,,,Naudojimasis stacionaro ar dienos stacionaro paslaugomis,370
+,,,,371
+AM1,1,Mažiau nei prieš 6 mėn.  ,Kada paskutinį kartą lankėtės pas odontologą ar ortodontą? ,372
+,2,Nuo 6 mėn. iki 12 mėn.  ,,373
+,3,Prieš 12 mėn. ar daugiau ,,374
+,4,Niekada  ,,375
+AM2,1,Mažiau nei prieš 12 mėn.  ,Kada paskutinį kartą kreipėtės į bendrosios praktikos ar šeimos gydytoją dėl savo sveikatos?,376
+,2,Prieš 12 mėn. ar daugiau ,,377
+,3,Niekada  ,,378
+AM3,0 - 99,Kartų skaičius,Kiek kartų per pastarąsias 4 savaites kreipėtės į bendrosios praktikos ar šeimos gydytoją dėl savo sveikatos?,379
+,-2,Netaikoma,,380
+AM4,1,Mažiau nei prieš 12 mėn.  ,"Kada paskutinį kartą kreipėtės į gydytoją specialistą ar chirurgą dėl savo sveikatos? 
+",381
+,2,Prieš 12 mėn. ar daugiau ,,382
+,3,Niekada  ,,383
+AM5,0 - 99,Kartų skaičius,Kiek kartų per pastarąsias 4 savaites kreipėtės į gydytoją specialistą ar chirurgą dėl savo sveikatos?,384
+,-2,Netaikoma,,385
+AM6A,1,Taip,Fizioterapeuto ar kineziterapeuto konsultacija per pastaruosius 12 mėn.,386
+,2,Ne,,387
+AM6B,1,Taip,"Psichologo, psichoterapeuto ar psichiatro konsultacija per pastaruosius 12 mėn.",388
+,2,Ne,,389
+AM7,1,Taip,"Priežiūros namuose paslaugų naudojimas asmeninėms reikmėms per pastaruosius 12 mėn.
+",390
+,2,Ne,,391
+,,,,392
+,,,Vaistų vartojimas,393
+,,,,394
+MD1,1,Taip,Bet kokių gydytojo išrašytų vaistų vartojimas per pastarąsias dvi savaites (išskyrus kontraceptinius vaistus),395
+,2,Ne,,396
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,397
+MD2,1,Taip,"Bet kokių gydytojo neišrašytų vaistų, vaistažolių preparatų ar vitaminų vartojimas per pastarąsias dvi savaites (išskyrus kontraceptinius vaistus)",398
+,2,Ne,,399
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,400
+,,,,401
+,,,Ligų prevencija,402
+,,,,403
+PA1,YYYYMM,"YYYY (metai): 2018-2019; MM (mėnuo): 01 - 12",Kada paskutinį kartą skiepijotės nuo gripo?,404
+,1,Seniai (daugiau nei prieš metus),,405
+,2,Niekada,,406
+PA2,1,Per pastaruosius 12 mėn. ,Kada paskutinį kartą medicinos specialistas matavo kraujospūdį?,407
+,2,Prieš 1–3 metus,,408
+,3,Prieš 3–5 metus,,409
+,4,Prieš 5 m. ir daugiau ,,410
+,5,Niekada,,411
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,412
+PA3,1,Per pastaruosius 12 mėn. ,Kada paskutinį kartą medicinos specialistas matavo cholesterolio kiekį kraujyje?,413
+,2,Prieš 1–3 metus,,414
+,3,Prieš 3–5 metus,,415
+,4,Prieš 5 m. ir daugiau ,,416
+,5,Niekada,,417
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,418
+PA4,1,Per pastaruosius 12 mėn. ,Kada paskutinį kartą medicinos specialistas matavo cukraus kiekį kraujyje?,419
+,2,Prieš 1–3 metus,,420
+,3,Prieš 3–5 metus,,421
+,4,Prieš 5 m. ir daugiau ,,422
+,5,Niekada,,423
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,424
+PA5,1,Per pastaruosius 12 mėn. ,Kada paskutinį kartą buvo atliktas slapto kraujavimo (kraujo likučių išmatose) tyrimas? ,425
+,2,Prieš 1–2 metus,,426
+,3,Prieš 2–3 metus,,427
+,4,Prieš 3 m. ir daugiau ,,428
+,5,Niekada,,429
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,430
+PA6,1,Per pastaruosius 12 mėn. ,Kada paskutinį kartą atlikta kolonoskopija? ,431
+,2,Prieš 1–5 metus,,432
+,3,Prieš 5–10 metų,,433
+,4,Prieš 10 m. ir daugiau ,,434
+,5,Niekada,,435
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,436
+PA7,1,Per pastaruosius 12 mėn. ,Kada paskutinį kartą atlikta mamografija (krūtų rentgenograma)? (Atsakė tik moterys).,437
+,2,Prieš 1–2 metus,,438
+,3,Priesš 2–3 metus,,439
+,4,Prieš 3 m. ir daugiau ,,440
+,5,Niekada,,441
+,-2,Netaikoma,,442
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,443
+PA8,1,Per pastaruosius 12 mėn. ,Kada paskutinį kartą imtas gimdos kaklelio tepinėlis? (Atsakė tik moterys).,444
+,2,Prieš 1–2 metus,,445
+,3,Priesš 2–3 metus,,446
+,4,Prieš 3 m. ir daugiau ,,447
+,5,Niekada,,448
+,-2,Netaikoma,,449
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,450
+,,,,451
+,,,Nepatenkinti sveikatos priežiūros paslaugų poreikiai ,452
+,,,,453
+UN1A,1,Taip,Nepatenkintas sveikatos priežiūros poreikis per pastaruosius 12 mėn. dėl ilgų eilių,454
+,2,Ne,,455
+,3,Nereikėjo sveikatos priežiūros paslaugų,,456
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,457
+UN1B,1,Taip,Nepatenkintas sveikatos priežiūros poreikis per pastaruosius 12 mėn. dėl atstumo ar transporto problemų ,458
+,2,Ne,,459
+,3,Nereikėjo sveikatos priežiūros paslaugų,,460
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,461
+UN2A,1,Taip,Per pastaruosius 12 mėn. dėl finansinių priežasčių atsisakėte gydytojo paslaugų (išskyrus odontologo),462
+,2,Ne,,463
+,3,Nereikėjo teikiamų paslaugų,,464
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,465
+UN2B,1,Taip,Per pastaruosius 12 mėn. dėl finansinių priežasčių atsisakėte odontologo paslaugų,466
+,2,Ne,,467
+,3,Nereikėjo teikiamų paslaugų,,468
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,469
+UN2C,1,Taip,Per pastaruosius 12 mėn. dėl finansinių priežasčių atsisakėte gydytojo išrašytų vaistų,470
+,2,Ne,,471
+,3,Nereikėjo teikiamų paslaugų,,472
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,473
+UN2D,1,Taip,"Per pastaruosius 12 mėn. dėl finansinių priežasčių atsisakėte psichikos sveikatos paslaugų (pvz., teikiamų psichologo, psichoterapeuto ar psichiatro)",474
+,2,Ne,,475
+,3,Nereikėjo teikiamų paslaugų,,476
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,477
+,,,,478
+,,,SVEIKATĄ LEMIANTYS VEIKSNIAI,479
+,,,,480
+,,,Svoris ir ūgis,481
+,,,,482
+BM1,50 - 250,Skaičius (cm),Ūgis (be batų),483
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,484
+BM2,20 - 350,Skaičius (kg),Svoris (be drabužių ir batų),485
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,486
+,,,,487
+,,,Fizinis aktyvumas,488
+,,,,489
+PE1,1,Daugiausia sėdima ar stovima  ,"Fizinė veikla dirbant (tiek apmokamą, tiek neapmokamą darbą)",490
+,2,Daugiausia vaikštoma arba atliekamas vidutinių fizinių pastangų reikalaujantis darbas,,491
+,3,Daugiausia dirbamas sunkus fizinis darbas  ,,492
+,4,Neatliekama jokių darbinių užduočių,,493
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,494
+PE2,1 - 7,Dienų skaičius  ,Kiek dienų per įprastą savaitę einate pėsčiomis užtrukdamas (-a) mažiausiai 10 min. be pertraukos?,495
+,0,Tokia fizine veikla neužsiimate ,,496
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,497
+PE3,1,10 – 29 min. ,Kiek laiko per dieną paprastai užtrunkate eidamas (-a) pėsčiomis?,498
+,2,30 – 59 min. ,,499
+,3,Nuo 1 val. iki 2 val. ,,500
+,4,Nuo 2 val. iki 3 val. ,,501
+,5,3 val. ar daugiau ,,502
+,-2,Netaikoma,,503
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,504
+PE4,1 - 7,Dienų skaičius  ,Kiek dienų per įprastą savaitę važiuojate dviračiu užtrukdamas (-a) mažiausiai 10 min. be pertraukos?,505
+,0,Tokia fizine veikla neužsiimate ,,506
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,507
+PE5,1,10 – 29 min. ,Kiek laiko per dieną paprastai užtrunkate važiuodamas (-a) dviračiu? ,508
+,2,30 – 59 min. ,,509
+,3,Nuo 1 val. iki 2 val. ,,510
+,4,Nuo 2 val. iki 3 val. ,,511
+,5,3 val. ar daugiau ,,512
+,-2,Netaikoma,,513
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,514
+PE6,1 - 7,Dienų skaičius  ,"Kiek dienų per įprastą savaitę sportuojate, užsiimate kūno rengyba ar aktyvia laisvalaikio veikla mažiausiai 10 min. be pertraukos? ",515
+,0,Tokia fizine veikla neužsiimate ,,516
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,517
+PE7,HHMM,"HH (valandos): 00 - 99, MM (minutės): 00 - 59","Kiek laiko per įprastą savaitę sportuojate, užsiimate kūno rengyba ar aktyvia laisvalaikio veikla?",518
+,-2,Netaikoma,,519
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,520
+PE8,1 - 7,Dienų skaičius  ,"Kiek dienų per įprastą savaitę atliekate konkrečius veiksmus, skirtus sustiprinti raumenis, pvz., darote ištvermės ar jėgos pratimus? 
+",521
+,0,Tokia fizine veikla neužsiimate ,,522
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,523
+PE9,HHMM,"HH (valandos): 00 - 24, MM (minutės): 00 - 59",Kiek paprastai laiko per dieną sėdite?,524
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,525
+,,,,526
+,,,Mitybos įpročiai,527
+,,,,528
+DH1,1,Vieną ar daugiau kartų per dieną  ,"Kaip dažnai valgote vaisius, įskaitant šaldytus, džiovintus, konservuotus? (Išskyrus vaisių sultis (natūralias ar iš koncentrato)",529
+,2,4 – 6 kartus per savaitę  ,,530
+,3,1 – 3 kartus per savaitę  ,,531
+,4,Rečiau nei kartą per savaitę  ,,532
+,5,Niekada  ,,533
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,534
+DH2,1 - 99,Skaičius,Vaisių porcijų skaičius per dieną (išskyrus vaisių sultis),535
+,-2,Netaikoma,,536
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,537
+DH3,1,Vieną ar daugiau kartų per dieną  ,"Kaip dažnai valgote daržoves ar salotas (įskaitant šaldytas, džiovintas, konservuotas)? (Išskyrus bulves, daržovių sultis (natūralias ar iš koncentrato), daržovių sriubas)",538
+,2,4 – 6 kartus per savaitę  ,,539
+,3,1 – 3 kartus per savaitę  ,,540
+,4,Rečiau nei kartą per savaitę  ,,541
+,5,Niekada  ,,542
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,543
+DH4,1 - 99,Skaičius,Daržovių ar salotų porcijų skaičius per dieną ,544
+,-2,Netaikoma,,545
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,546
+DH5,1,Vieną ar daugiau kartų per dieną  ,"Kaip dažnai geriate natūralias (100 %) vaisių ar daržovių sultis? 
+(Išskyrus iš koncentrato pagamintas ar saldintas sultis)",547
+,2,4 – 6 kartus per savaitę  ,,548
+,3,1 – 3 kartus per savaitę  ,,549
+,4,Rečiau nei kartą per savaitę  ,,550
+,5,Niekada  ,,551
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,552
+DH6,1,Vieną ar daugiau kartų per dieną  ,"Kaip dažnai geriate gaiviuosius gėrimus, pvz., limonadą ar kolą?
+(Išskyrus dietinius ar dirbtiniais saldikliais saldintus gėrimus)",553
+,2,4 – 6 kartus per savaitę  ,,554
+,3,1 – 3 kartus per savaitę  ,,555
+,4,Rečiau nei kartą per savaitę  ,,556
+,5,Niekada  ,,557
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,558
+,,,,559
+,,,Rūkymas,560
+,,,,561
+SK1,1,Rūko kasdien,Tabako rūkymas (esama padėtis),562
+,2,Rūko kartais,,563
+,3,Nerūko,,564
+SK2,1 - 99,Skaičius,Vidutinis cigarečių skaičius per dieną,565
+,-2,Netaikoma,,566
+SK3,1,Taip,Ankstesnis kasdienis tabako rūkymas,567
+,2,Ne,,568
+,-2,Netaikoma,,569
+SK4,1 - 99,Skaičius,Kiek metų rūkėte tabaką kasdien? ,570
+,-2,Netaikoma,,571
+SK5,1,"Kasdien, 1 valandą per dieną ar ilgiau",Kaip dažnai tenka būti prirūkytose patalpose?,572
+,2,"Kasdien, trumpiau nei 1 val. per dieną",,573
+,3,Mažiausiai kartą per savaitę (bet ne kasdien),,574
+,4,Rečiau nei kartą per savaitę,,575
+,5,Niekada arba beveik niekada,,576
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,577
+SK6,1,Kasdien,Elektroninių cigarečių arba panašių elektroninių prietaisų naudojimas,578
+,2,Kartais,,579
+,3,Anksčiau naudodavo,,580
+,4,Niekada nėra naudojęs (-usi),,581
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,582
+,,,,583
+,,,Alkoholio vartojimas,584
+,,,,585
+AL1,1,Kasdien arba beveik kasdien  ,"Bet kokių alkoholinių gėrimų (alaus, vyno, sidro, stipriųjų gėrimų, kokteilių, likerių, namų gamybos alkoholinių gėrimų ir pan.) vartojimo dažnumas per pastaruosius 12 mėn.",586
+,2,5 – 6 dienas per savaitę  ,,587
+,3,3 – 4 dienas per savaitę  ,,588
+,4,1 – 2 dienas per savaitę  ,,589
+,5,2 – 3 dienas per mėnesį  ,,590
+,6,Kartą per mėnesį  ,,591
+,7,Rečiau nei kartą per mėnesį  ,,592
+,8,"Nevartojote per pastaruosius 12 mėn., nes atsisakėte alkoholio",,593
+,9,Niekada arba ragavote tik keletą kartų gyvenime ,,594
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,595
+AL2,1,Visas 4 dienas  ,Alkoholinių gėrimų vartojimo dažnumas pirmadieniais–ketvirtadieniais,596
+,2,3-is iš 4 dienų  ,,597
+,3,2-i iš 4 dienų  ,,598
+,4,1-ą iš 4 dienų  ,,599
+,5,Nei vieną iš 4 dienų  ,,600
+,-2,Netaikoma,,601
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,602
+AL3,1,16 arba daugiau standartinių alkoholio vienetų (1 SAV laikoma 10 g gryno etilo alkoholio) per dieną,"Vidutinis standartinių alkoholio vienetų skaičius suvartojamas tą dieną, kai vartojamas alkoholis (pirmadieniais–ketvirtadieniais)",603
+,2,10 - 15 SAV per dieną,,604
+,3,6 - 9 SAV per dieną,,605
+,4,4 - 5 SAV per dieną,,606
+,5,3 SAV per dieną,,607
+,6,2 SAV per dieną,,608
+,7,1 SAV per dieną,,609
+,8,0 SAV per dieną,,610
+,-2,Netaikoma,,611
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,612
+AL4,1,Visas 3 dienas  ,"Alkoholinių gėrimų vartojimo dažnumas penktadieniais–sekmadieniais
+",613
+,2,2-i iš 3 dienų  ,,614
+,3,1-ą iš 3 dienų  ,,615
+,4,Nei vieną iš trijų dienų  ,,616
+,-2,Netaikoma,,617
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,618
+AL5,1,16 arba daugiau standartinių alkoholio vienetų (1 SAV laikoma 10 g gryno etilo alkoholio) per dieną,"Vidutinis standartinių alkoholio vienetų skaičius suvartojamas tą dieną, kai vartojamas alkoholis (penktadieniais–sekmadieniais)",619
+,2,10 - 15 SAV per dieną,,620
+,3,6 - 9 SAV per dieną,,621
+,4,4 - 5 SAV per dieną,,622
+,5,3 SAV per dieną,,623
+,6,2 SAV per dieną,,624
+,7,1 SAV per dieną,,625
+,8,0 SAV per dieną,,626
+,-2,Netaikoma,,627
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,628
+AL6,1,Kasdien ar beveik kasdien  ,"Rizikingo alkoholio vartojimo, kai viena proga išgeriama 1,5 litro ar daugiau alaus arba 6 taures (600 ml) ar daugiau vyno arba 5 taureles (200 ml) ar daugiau degtinės, arba kitų stipriųjų alkoholinių gėrimų, dažnumas per pastaruosius 12 mėn.",629
+,2,5 – 6 dienas per savaitę  ,,630
+,3,3 – 4 dienas per savaitę  ,,631
+,4,1 – 2 dienas per savaitę  ,,632
+,5,2 – 3 dienas per mėnesį  ,,633
+,6,Kartą per mėnesį  ,,634
+,7,Rečiau nei kartą per mėnesį  ,,635
+,8,Nei karto per pastaruosius 12 mėn.  ,,636
+,9,Niekada ,,637
+,-2,Netaikoma,,638
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,639
+,,,,640
+,,,Socialinė pagalba,641
+,,,,642
+SS1,1,Nei vieno  ,"Artimų žmonių, kuriais galima pasikliauti kilus rimtai asmeninei problemai, skaičius",643
+,2,1 ar 2 asmenis ,,644
+,3,3 – 5 asmenis ,,645
+,4,6 ir daugiau asmenų ,,646
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,647
+SS2,1,Labai  ,"Kiek artimieji (šeimos nariai, draugai ir kt.) domisi tuo, ką veikiate?",648
+,2,Šiek tiek  ,,649
+,3,Vidutiniškai  ,,650
+,4,Mažai  ,,651
+,5,Nesidomi  ,,652
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,653
+SS3,1,Labai lengva  ,Ar paprasta prireikus gauti praktinės kaimynų pagalbos?,654
+,2,Lengva  ,,655
+,3,"Nei sunku, nei lengva",,656
+,4,Sunku  ,,657
+,5,Labai sunku  ,,658
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,659
+,,,,660
+,,,Neformalios priežiūros ar pagalbos teikimas ,661
+,,,,662
+IC1,1,Taip,"Priežiūros ar pagalbos teikimas bent kartą per savaitę vienam ar keliems asmenims, turintiems su senatve, lėtiniais sveikatos sutrikimais ar negalia susijusių problemų (išskyrus profesionalią veiklą)",663
+,2,Ne,,664
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,665
+IC2,1,Šeimos narys (-iai)  ,Ar šis asmuo (asmenys) yra:,666
+,2,Ne šeimos narys (-iai)  ,,667
+,-2,Netaikoma,,668
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,669
+IC3,1,Mažiau nei 10 val. per savaitę  ,Kiek valandų per savaitę prižiūrite ar padedate šiam asmeniui (šiems asmenims)? ,670
+,2,Nuo 10 val. iki 20 val. per savaitę  ,,671
+,3,20 ar daugiau val. per savaitę  ,,672
+,-2,Netaikoma,,673
+,-3,Neįtraukiama į skaičiavimus (Proxy = 2 arba 3),,674
