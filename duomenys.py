@@ -5,41 +5,25 @@ import os
 class Duomenys:
     def __init__(self, metai):
         self.metai = metai
-        self.csv_duomenys = os.path.join('duomenys',
-            str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
-        self.csv_aprašymai = os.path.join('duomenys',
-            str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
+        self.csv_duomenys = os.path.join('duomenys', str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
+        self.csv_aprašymai = os.path.join('duomenys', str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
+        self.kintamieji = ['pid', 'sex', 'age', 'citizen', 'ap', 'm_k', 'hs1', 'hs2', 'cd2', 'pn1', 'pa1', 'pe6',
+                            'sk1', 'al1']
+        self.atitikmenys = {'pid': 'ID', 'sex': 'Lytis', 'age': 'Amzius', 'citizen': 'Pilietybe',
+            'ap': 'Apskritis', 'm_k': 'Miestas/Kaimas', 'hs1': 'Bendra sveikatos bukle', 'cd2': 'Bendra dantu bukle',
+            'hs2': 'Letines ligos', 'pn1': 'Kuno skausmas', 'pa1': 'Skiepai', 'pe6': 'Sportas', 'sk1': 'Rukymas',
+            'al1': 'Alkohoilis'}
+
         self.df = pd.DataFrame()
-        self.kintamieji = [
-            'pid', 'sex', 'age', 'citizen', 'ap', 'm_k', 'hs1', 'hs2', 'cd2', 'pn1', 'pa1', 'pe6', 'sk1', 'al1']
-        self.atitikmenys = {'pid': 'ID',
-                            'sex': 'Lytis',
-                            'age': 'Amžius',
-                            'citizen': 'Pilietybė',
-                            'ap': 'Apskritis',
-                            'm_k': 'Miestas/Kaimas',
-                            'hs1': 'Bendra sveikatos būklė',
-                            'cd2': 'Bendra dantų būklė',
-                            'hs2': 'Lėtines ligos',
-                            'pn1': 'Kūno skausmas',
-                            'pa1': 'Skiepai',
-                            'pe6': 'Sportas',
-                            'sk1': 'Rūkymas',
-                            'al1': 'Alkoholis'}
-        self.kintamieji_išskirčių_tikrinimui = ['Amžius']
-        self.df = pd.DataFrame()
+
         self.csv2pd()  # nuskaitymas
-        self.ar_duomenys_sutvarkyti = False
-        print(f'{metai} m. gyventojų sveikatos duomenys įkelti į vidinę strukūrą. ' +
-              ('' if self.ar_duomenys_sutvarkyti else 'Jie netvarkyti!'))
+        # self.kintamojo_paaišknimas() # pridėti kintamųjų paaiškinimus
+        print(f'{metai} m. gyventojų sveikatos duomenys įkelti į vidinę strukūrą.')
 
-    def tvarkyti(self):
-        self.pervadinti_kintamuosius()
-        self.valyti()  # valymas
-        self.atmesti_isskirtis(self.kintamieji_išskirčių_tikrinimui)
-        self.ar_duomenys_sutvarkyti = True
-        print(' - Duomenys baigti tvarkyti')
 
+    def irasyti_csv(self,csv_rinkmena):
+        self.df.to_csv(csv_rinkmena)
+        print(f'{csv_rinkmena} irasyta sekmingai')
     def info(self):
         print()
         print(f'{self.metai} m. gyventojų sveikatos ' +
@@ -101,11 +85,12 @@ class Duomenys:
 
 def main():
     duomenys2019 = Duomenys(2019)
-    #duomenys2019.info()
-    duomenys2019.tvarkyti()
-    duomenys2019.info()
-    df = duomenys2019.gauti_duomenis()
-    print(df)
+    df = duomenys2019.gauti_sutvarkytus_duomenis()
+    df.info()
+
+    duomenys2019.irasyti_csv('Sveikatos_duomenys_analizei.csv')
+
+    # print(df)
 
 
 if __name__ == '__main__':
