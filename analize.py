@@ -27,17 +27,6 @@ corr_kintamieji = [
 corr = df[corr_kintamieji].corr()
 corr = corr.replace(1, pd.NA)  # pakeisti koreliacijas su savimi į NaN
 
-stipriausia_koreliacija = corr.apply(abs).max().max()
-# 2x2 dydžio lentelė, dvi porų reikšmės vienodos, iš porų yra NaN:
-corr_max_lent = corr[corr.apply(abs) == stipriausia_koreliacija].dropna(how="all", axis=0).dropna(how="all", axis=1)
-# corr_max_lent1 = corr_max_lent.iloc[[0], [1]]  # 1x1 lentelė
-corr_max_kint = list(corr_max_lent.idxmax()) # du kintamieji
-print(f'Stipriausia koreliacija rasta tarp '
-      f'„{corr_max_kint[0]}“ ir „{corr_max_kint[1]}“ '
-      f'(r = {stipriausia_koreliacija:.3f})')
-if stipriausia_koreliacija < 0.2:
-     print('Tačiau visos koreliacijos tarp pasirinktų tolydžiųjų kintamųjų yra labai silpnos (Pirsono |r| < 0,2).')
-
 print()
 print('Koreliacija tarp amžiaus ir kitų pasirinktų kintamųjų:')
 print(corr['Amžius'].drop(['Amžius']))
@@ -50,6 +39,18 @@ print(corr['Vaisių porcijos per dieną'].drop(['KMI', 'Amžius', 'Vaisių porci
 print()
 
 # Duomenų vizualizacija ir išvadų pateikimas.
+
+stipriausia_koreliacija = corr.apply(abs).max().max()
+# 2x2 dydžio lentelė, dvi porų reikšmės vienodos, iš porų yra NaN:
+corr_max_lent = corr[corr.apply(abs) == stipriausia_koreliacija].dropna(how="all", axis=0).dropna(how="all", axis=1)
+# corr_max_lent1 = corr_max_lent.iloc[[0], [1]]  # 1x1 lentelė
+corr_max_kint = list(corr_max_lent.idxmax()) # du kintamieji
+print(f'Stipriausia koreliacija rasta tarp '
+      f'„{corr_max_kint[0]}“ ir „{corr_max_kint[1]}“ '
+      f'(r = {stipriausia_koreliacija:.3f})')
+if stipriausia_koreliacija < 0.2:
+     print('Tačiau visos koreliacijos tarp pasirinktų tolydžiųjų kintamųjų yra labai silpnos (Pirsono |r| < 0,2).')
+
 plt.figure(figsize=[5,5])
 plt.scatter(df[corr_max_kint[1]], df[corr_max_kint[0]], alpha=0.10)
 plt.title(f'{metai} m. gyventojų sveikatos duomenys:\n'
