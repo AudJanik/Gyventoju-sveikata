@@ -9,7 +9,7 @@ class Duomenys:
         self.kintamieji = []
         self.df = pd.DataFrame()
 
-    def csv2pd(self, kintamųjų_sąrašas):
+    def csv2pd(self, kintamųjų_sąrašas=[]):
         # nuskaityti csv
         self.df = pd.read_csv(self.csv_duomenys)
         # artinkti norimus kintamuosius - Audrius
@@ -23,11 +23,16 @@ class Duomenys:
         pass
 
     def gauti_sutvarkytus_duomenis(self):
+        self.csv2pd()  # nuskaitymas
+        # self.kintamojo_paaišknimas() # pridėti kintamųjų paaiškinimus
+        self.valymas() # valymas
         return self.df
+
 
 def main():
     duomenys2019 = Duomenys(2019)
     print(duomenys2019.gauti_sutvarkytus_duomenis())
+
 
 if __name__ == '__main__':
     main()
