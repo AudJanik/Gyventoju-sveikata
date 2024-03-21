@@ -11,7 +11,8 @@ class Duomenys:
             str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
         self.df = pd.DataFrame()
         self.kintamieji = [
-            'pid', 'sex', 'age', 'citizen', 'ap', 'm_k', 'hs1', 'hs2', 'cd2', 'pn1', 'pa1', 'pe6', 'sk1', 'al1']
+            'pid', 'sex', 'age', 'citizen', 'ap', 'm_k', 'hs1', 'hs2', 'cd2', 'pn1', 'pa1', 'pe6', 'sk1', 'al1',
+            'ho12', 'ho34', 'am3', 'bm1', 'bm2', 'dh1', 'dh4']
         self.atitikmenys = {'pid': 'ID',
                             'sex': 'Lytis',
                             'age': 'Amžius',
@@ -25,8 +26,21 @@ class Duomenys:
                             'pa1': 'Skiepai',
                             'pe6': 'Sportas',
                             'sk1': 'Rūkymas',
-                            'al1': 'Alkoholis'}
-        self.kintamieji_išskirčių_tikrinimui = ['Amžius']
+                            'al1': 'Alkoholis',
+                            'ho12': 'Naktų ligoninėje per metus',
+                            'ho34': 'Kartai stacionare per metus',
+                            'am3': 'Kartai pas šeimos gydytoją per 4 sav.',
+                            'bm1': 'Ūgis, cm',
+                            'bm2': 'Svoris, kg',
+                            'dh1': 'Vaisių porcijos per dieną',
+                            'dh4': 'Daržovių porcijos per dieną'
+                            }
+        self.kintamieji_išskirčių_tikrinimui = [
+            'Amžius', 'Naktų ligoninėje per metus',
+            'Kartai stacionare per metus', 'Kartai pas šeimos gydytoją per 4 sav.',
+            'Kartai pas šeimos gydytoją per 4 sav.', 'Ūgis, cm', 'Svoris, kg',
+            'Vaisių porcijos per dieną', 'Daržovių porcijos per dieną'
+        ]
         self.df = pd.DataFrame()
         self.csv2pd()  # nuskaitymas
         self.ar_duomenys_sutvarkyti = False
