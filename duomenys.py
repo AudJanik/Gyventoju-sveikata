@@ -3,10 +3,6 @@ import os
 
 
 class Duomenys:
-
-    def irasyti_csv(self, csv_rinkmena):
-        self.df.to_csv(csv_rinkmena)
-        print(f'{csv_rinkmena} irasyta sekmingai')
     def __init__(self, metai):
         self.metai = metai
         self.csv_duomenys = os.path.join('duomenys',
@@ -46,6 +42,9 @@ class Duomenys:
         self.ar_duomenys_sutvarkyti = True
         print(' - Duomenys baigti tvarkyti')
 
+    def irasyti_csv(self,csv_rinkmena):
+        self.df.to_csv(csv_rinkmena)
+        print(f'{csv_rinkmena} irasyta sekmingai')
     def info(self):
         print()
         print(f'{self.metai} m. gyventojų sveikatos ' +
