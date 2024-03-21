@@ -53,6 +53,7 @@ Bendra sveikatos būklė pagal lytį
 
 Bendra sveikatos būklė pagal miestas/kaimas
 1-miestas, 2 - kaimas
+![paveikslas](https://github.com/AudJanik/Gyventoju-sveikata/assets/157985262/f929ae0a-95c9-4450-819b-9e43d701fca8)
 
 Lėtines ligos pagal amziu
 Ar serga lėtinėmis ligomis: 1- Taip, 2 - ne
