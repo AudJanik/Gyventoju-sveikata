@@ -43,12 +43,14 @@ Lietuvos gyventojų sveikatos duomenų VIZUALIZACIJA
 
 Bendra sveikatos būklė pagal amziu 
 1-labai gera, 2-gera, 3-vidutiniska, 4-bloga, 5-labai bloga
-![Bendra sveikatos būklė pagal amziu.png](Bendra%20sveikatos%20b%3Fkl%3F%20pagal%20amziu.png)
+
+![paveikslas](https://github.com/AudJanik/Gyventoju-sveikata/assets/157985262/eb016cb7-dd56-4a20-9118-e210948d9759)
 
 
 Bendra sveikatos būklė pagal lytį
 1-labai gera, 2-gera, 3-vidutiniska, 4-bloga, 5-labai bloga
-![Bendra sveikatos būklė pagal lytį.png](Bendra%20sveikatos%20b%3Fkl%3F%20pagal%20lyt%3F.png)
+
+![paveikslas](https://github.com/AudJanik/Gyventoju-sveikata/assets/157985262/416b1869-4b3f-4390-931d-82550ae76b0c)
 
 
 Bendra sveikatos būklė pagal miestas/kaimas
@@ -57,7 +59,13 @@ Bendra sveikatos būklė pagal miestas/kaimas
 
 Lėtines ligos pagal amziu
 Ar serga lėtinėmis ligomis: 1- Taip, 2 - ne
-![Lėtines ligos pagal amziu.png](L%3Ftines%20ligos%20pagal%20amziu.png)
+
+
+![paveikslas](https://github.com/AudJanik/Gyventoju-sveikata/assets/157985262/29d27378-7015-4b2e-a08a-00cfb45c0813)
+
 
 Bendra sveikatos būklė pagal amžiaus kategorijas
-![Bendra sveikatos būklė pagal amžiaus kategorijas.png](Bendra%20sveikatos%20b%3Fkl%3F%20pagal%20am%9Eiaus%20kategorijas.png)
+
+![paveikslas](https://github.com/AudJanik/Gyventoju-sveikata/assets/157985262/e61a762a-6e33-40f5-bfc7-ba6a7155f12d)
+
+
