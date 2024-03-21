@@ -33,7 +33,13 @@ class Duomenys:
         print(f'{metai} m. gyventojų sveikatos duomenys įkelti į vidinę strukūrą. ' +
               ('' if self.ar_duomenys_sutvarkyti else 'Jie netvarkyti!'))
 
-
+    def info(self):
+        print()
+        print(f'{self.metai} m. gyventojų sveikatos ' +
+              ('sutvarkyti' if self.ar_duomenys_sutvarkyti else 'NEtvarkyti') +
+              ' duomenys:')
+        self.df.info()
+        print()
 
     def tvarkyti(self):
         self.pervadinti_kintamuosius()
@@ -43,15 +49,8 @@ class Duomenys:
         print(' - Duomenys baigti tvarkyti')
 
     def irasyti_csv(self,csv_rinkmena):
-        self.df.to_csv(csv_rinkmena)
+        self.df.to_csv(csv_rinkmena, index=False)
         print(f'{csv_rinkmena} irasyta sekmingai')
-    def info(self):
-        print()
-        print(f'{self.metai} m. gyventojų sveikatos ' +
-              ('sutvarkyti' if self.ar_duomenys_sutvarkyti else 'NEtvarkyti') +
-              ' duomenys:')
-        self.df.info()
-        print()
 
     def csv2pd(self):
         # nuskaityti csv
