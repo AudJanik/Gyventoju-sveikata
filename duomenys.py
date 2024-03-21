@@ -3,6 +3,10 @@ import os
 
 
 class Duomenys:
+
+    def irasyti_csv(self, csv_rinkmena):
+        self.df.to_csv(csv_rinkmena)
+        print(f'{csv_rinkmena} irasyta sekmingai')
     def __init__(self, metai):
         self.metai = metai
         self.csv_duomenys = os.path.join('duomenys',
@@ -32,6 +36,8 @@ class Duomenys:
         self.ar_duomenys_sutvarkyti = False
         print(f'{metai} m. gyventojų sveikatos duomenys įkelti į vidinę strukūrą. ' +
               ('' if self.ar_duomenys_sutvarkyti else 'Jie netvarkyti!'))
+
+
 
     def tvarkyti(self):
         self.pervadinti_kintamuosius()
@@ -105,6 +111,7 @@ def main():
     duomenys2019.tvarkyti()
     duomenys2019.info()
     df = duomenys2019.gauti_duomenis()
+    duomenys2019.irasyti_csv('Sveikatos_duomenys_analizei.csv')
     print(df)
 
 
