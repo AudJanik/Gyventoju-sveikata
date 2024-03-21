@@ -43,7 +43,24 @@ class Duomenys:
 
     def atmesti_isskirtis(self, pasirinkti_kintamieji):
         # išskirčių atmetimas pagal IQR - Mindaugas
-        pass
+        # < Q1 - IQR * 1.5
+        # > Q3 + IQR * 1.5
+        kriterijus = 1.5  # bet kartais naudojama 3
+        print(f'Išskirčių šalinimas, jei < Q1-IQR*{kriterijus} arba > Q3+IQR*{kriterijus}:')
+        for k in pasirinkti_kintamieji:
+            if k in self.df:
+                eilučių_pradinis_skaicius = self.df[k].count()
+                quantiles = self.df[k].quantile(q=[0.25, 0.75])
+                iqr = quantiles[0.75] - quantiles[0.25]
+                self.df = self.df[self.df[k] >= quantiles[0.25] - iqr * kriterijus]
+                self.df = self.df[self.df[k] <= quantiles[0.75] + iqr * kriterijus]
+                eilučių_skaičiaus_pokytis = eilučių_pradinis_skaicius - self.df[k].count()
+                if eilučių_skaičiaus_pokytis == 0:
+                    print(f' - kintamasis „{k}“ neturėjo išskirčių')
+                else:
+                    print(f' - iš kintamojo „{k}“ pašalintos išskirtys:', eilučių_skaičiaus_pokytis)
+            else:
+                print(f' - nepavyko rasti kintamojo „{k}“')
 
     def gauti_duomenis(self):
         return self.df
