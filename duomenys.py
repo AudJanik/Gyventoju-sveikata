@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 
+
 class Duomenys:
     def __init__(self, metai):
         self.metai = metai
@@ -8,6 +9,10 @@ class Duomenys:
         self.csv_aprašymai = os.path.join('duomenys', str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
         self.kintamieji = []
         self.df = pd.DataFrame()
+
+        self.csv2pd()  # nuskaitymas
+        # self.kintamojo_paaišknimas() # pridėti kintamųjų paaiškinimus
+        print(f'{metai} m. gyventojų sveikatos duomenys įkelti į vidinę strukūrą.')
 
     def csv2pd(self, kintamųjų_sąrašas=[]):
         # nuskaityti csv
@@ -20,11 +25,8 @@ class Duomenys:
 
     def valymas(self):
         # tuščių reikšmių, išskirčių atmetimas - Mindaugas
-        pass
 
     def gauti_sutvarkytus_duomenis(self):
-        self.csv2pd()  # nuskaitymas
-        # self.kintamojo_paaišknimas() # pridėti kintamųjų paaiškinimus
         self.valymas() # valymas
         return self.df
 
