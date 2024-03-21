@@ -25,6 +25,9 @@ class Duomenys:
 
     def valymas(self):
         # tuščių reikšmių, išskirčių atmetimas - Mindaugas
+        self.df = self.df.dropna()
+        print(' - atmestos tuščios eilutės')
+
 
     def gauti_sutvarkytus_duomenis(self):
         self.valymas() # valymas
