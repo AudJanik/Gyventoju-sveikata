@@ -1,0 +1,670 @@
+﻿kintamojo_pavadinimas,kintamojo_reikšmių_kodai,kintamojo_reikšmių_aprašymas,kintamojo_aprašymas,objectid
+,,,TECHNINIAI TYRIMO KINTAMIEJI,1
+,,,,2
+PID,,,Respondento identifikacinis numeris,3
+WGT,,,Asmens populiacijos svoris,4
+PROXY,1,Pats respondentas,Dalyvavimo tyrime pobūdis,5
+,2,Už respondentą atsakė kitas to paties namų ūkio narys,,6
+,3,Už respondentą atsakė kito namų ūkio narys,,7
+REFYEAR,,2014,Apklausos ataskaitiniai metai,8
+REFMONTH,,Skaičius (1 - 12),Apklausos ataskaitinis mėnuo,9
+,,,,10
+,,,PAGRINDINIAI SOCIALINIAI KINTAMIEJI,11
+,,,,12
+SEX,1,Vyras,Lytis,13
+,2,Moteris,,14
+AGE,15–99,Sukakusių metų skaičius,Amžius,15
+BIRTHPLACE,10,Lietuvos Respublika,Gimimo šalis,16
+,21,ES šalis,,17
+,22,Ne ES šalis,,18
+CITIZEN,10,Lietuvos Respublikos,Pilietybė,19
+,21,Kitos ES šalies ,,20
+,22,Ne ES šalies ,,21
+AP,1,Alytaus apskritis,Apskritys,22
+,2,Kauno apskritis,,23
+,3,Klaipėdos apskritis,,24
+,4,Marijampolės apskritis,,25
+,5,Panevėžio apskritis,,26
+,6,Šiaulių apskritis,,27
+,7,Tauragės apskritis,,28
+,8,Telšių apskritis,,29
+,9,Utenos apskritis,,30
+,10,Vilniaus apskritis,,31
+DEG_URB,1,Tankiai apgyvendinta vietovė,Urbanizacijos laipsnis,32
+,2,Vidutiniškai apgyvendinta vietovė,,33
+,3,Menkai apgyvendinta vietovė,,34
+M_K,1,Miestas,Miestas ar kaimas,35
+,2,Kaimas,,36
+MARSTALEGAL,1,Niekada nebuvo vedęs (ištekėjusi),Juridinė santuokinė padėtis,37
+,2,Vedęs (ištekėjusi),,38
+,3,Našlys (-ė),,39
+,4,Išsituokęs (-usi),,40
+HATLEVEL,0,Neturi pradinio (ISCED 0),Įgytas aukščiausias išsilavinimas (ISCED 2011),41
+,1,Pradinis išsilavinimas (ISCED 1),,42
+,2,Pagrindinis išsilavinimas (ISCED 2),,43
+,3,Vidurinis išsilavinimas (ISCED 3),,44
+,4,Profesinis mokymas turint vidurinį išsilavinimą (ISCED 4),,45
+,6,Bakalauro studijos (ISCED 6),,46
+,7,Magistrantūros studijos (ISCED 7),,47
+,8,Doktorantūra (ISCED 8),,48
+MAINSTAT,10,Samdomasis darbuotojas arba savarankiškai dirbantis asmuo (įskaitant šeimos versle dirbančius ir atlyginimo negaunančius asmenis),Užimtumo statusas,49
+,20,Bedarbis (-ė) ,,50
+,31,"Mokinys (-ė), nedirbantis (-i) studentas (-ė) ",,51
+,32,Nedirbantis (-i) senatvės pensininkas (-ė) ,,52
+,33,Dėl negalios nedirbantis asmuo ,,53
+,34,Atliekantis privalomąją karo ar alternatyviąją tarnybą,,54
+,35,Namų šeimininkas (-ė) ,,55
+,36,Kitas neaktyvus asmuo ,,56
+FT_PT,1,Visą,Dirba visą ar ne visą darbo dienos ar savaitės laiką,57
+,2,Ne visą,,58
+,-2,Netaikoma,,59
+JOBSTAT,10,Savarankiškai dirbantis asmuo,Užimtumo statusas,60
+,21,"Samdomasis darbuotojas (-a), dirbantis (-i) pagal neterminuotą darbo sutartį ",,61
+,22,"Samdomasis darbuotojas (-a), dirbantis (-i) pagal terminuotą darbo sutartį, žodinį susitarimą ",,62
+,-2,Netaikoma,,63
+JOBISCO," 11 - 96, 0",Profesijos kodas (ISCO - 08 ) pagrindiniame darbe,Profesija,64
+,-2,Netaikoma,,65
+LOCNACE,A - U,Statistinis ekonominės veiklos rūšių klasifikatorius (NACE 2 red.),Pagrindinė darbovietės ekonominės veiklos rūšis,66
+,-2,Netaikoma,,67
+HHNBPERS,,,Namų ūkio narių skaičius (įskaitant respondentą),68
+HHNBPERS_0_4,,,4 metų ir jaunesnių vaikų skaičius namų ūkyje,69
+HHNBPERS_5_13,,,5 − 13 metų amžiaus vaikų skaičius namų ūkyje,70
+HHNBPERS_14_15,,,14 − 15 metų amžiaus vaikų skaičius namų ūkyje,71
+HHNBPERS_16_24,,,16 − 24 metų amžiaus asmenų skaičius namų ūkyje,72
+HHNBPERS_25_64,,,25 − 64 metų amžiaus asmenų skaičius namų ūkyje,73
+HHNBPERS_65PLUS,,,65 metų ir vyresnių asmenų skaičius namų ūkyje,74
+HHTYPE,10,Vienas asmuo ,Namų ūkio tipas,75
+,21,Viena motina ar vienas tėvas su vaiku (-ais) iki 25 metų amžiaus ,,76
+,22,"Pora, neturinti vaiko (-ų) iki 25 metų amžiaus  ",,77
+,23,Pora su vaiku (-ais) iki 25 metų amžiaus  ,,78
+,24,Pora arba viena motina (tėvas) su vaiku (-ais) iki 25 metų amžiaus ir kitais kartu gyvenančiais asmenimis  ,,79
+,25,Kita,,80
+HH_ACT,,,Dirbančių 16 - 64 metų amžiaus asmenų skaičius namų ūkyje,81
+HH_INACT,,,Nedirbančių ir ekonomiškai neaktyvių 16 - 64 metų amžiaus asmenų skaičius namų ūkyje,82
+HHINCOME,1,Mažesnės nei pirmojo kvintilio,Namų ūkio grynosios mėnesio ekvivalentinės pajamos,83
+,2,Tarp pirmojo ir antrojo kvintilių,,84
+,3,Tarp antrojo ir trečiojo kvintilių,,85
+,4,Tarp trečiojo ir ketvirtojo kvintilių,,86
+,5,Tarp ketvirtojo ir penktojo kvintilių,,87
+,,,,88
+,,,SVEIKATOS KINTAMIEJI,89
+,,,,90
+,,,Sveikatos būklė,91
+,,,,92
+HS1,1,Labai gera,Kaip apibūdintumėte savo sveikatą? ,93
+,2,Gera,,94
+,3,Vidutiniška,,95
+,4,Bloga,,96
+,5,Labai bloga,,97
+,-1,"Nėra (nežino, atsisako nurodyti)",,98
+HS2,1,Taip,"Ar Jūs sergate kokia nors lėtine (chroniška) liga arba turite ilgalaikių sveikatos sutrikimų? (Ilgalaike vadinama liga ar sveikatos sutrikimas, kuris truko ar, tikėtina, kad truks mažiausiai 6 mėn.)",99
+,2,Ne,,100
+HS3,1,Labai apribota,"Ar per pastaruosius bent 6 mėn. Jūsų veikla, palyginti su įprastine žmogaus veikla, buvo apribota dėl sveikatos sutrikimų? Ar sakytumėte, kad ji buvo...",101
+,2,Šiek tiek apribota,,102
+,3,Visiškai neapribota,,103
+,,,,104
+,,,Ligos ir lėtinės būklės,105
+,,,,106
+,,,Ar per pastaruosius 12 mėn. sirgote kuria nors iš išvardytų ligų?,107
+CD1A,1,Taip,a) Astma (įskaitant alerginę astmą),108
+,2,Ne,,109
+CD1B,1,Taip,"b) Lėtinis bronchitas, lėtinė obstrukcinė plaučių liga, emfizema",110
+,2,Ne,,111
+CD1C,1,Taip,c) Miokardo infarktas (širdies smūgis) arba infarkto lėtinės pasekmės ,112
+,2,Ne,,113
+CD1D,1,Taip,d) Koronarinė širdies liga ar krūtinės angina,114
+,2,Ne,,115
+CD1E,1,Taip,e) Aukštas kraujospūdis (hipertenzija),116
+,2,Ne,,117
+CD1F,1,Taip,"f) Galvos smegenų insultas (kraujo išsiliejimas į smegenis, smegenų trombozė) arba insulto lėtinės pasekmės",118
+,2,Ne,,119
+CD1G,1,Taip,g) Artrozė (išskyrus artritą),120
+,2,Ne,,121
+CD1H,1,Taip,h) Apatinės nugaros dalies liga ar kitos lėtinės nugaros problemos,122
+,2,Ne,,123
+CD1I,1,Taip,i) Kaklo srities liga ar kitos lėtinės kaklo problemos,124
+,2,Ne,,125
+CD1J,1,Taip,j) Cukrinis diabetas,126
+,2,Ne,,127
+CD1K,1,Taip,"k) Alergija, tokia kaip alerginė sloga (šienligė), akių uždegimas, dermatitas, alergija maistui ar kita alergija (išskyrus alerginę astmą)",128
+,2,Ne,,129
+CD1L,1,Taip,l) Kepenų cirozė,130
+,2,Ne,,131
+CD1M,1,Taip,"m) Šlapimo nelaikymas, šlapimo pūslės kontrolės problemos",132
+,2,Ne,,133
+CD1N,1,Taip,n) Inkstų problemos,134
+,2,Ne,,135
+CD1O,1,Taip,o) Depresija,136
+,2,Ne,,137
+,,,,138
+,,,Nelaimingi atsitikimai ir sužeidimai,139
+,,,,140
+,,,"Ar per pastaruosius 12 mėn. Jums buvo nutikęs kuris nors iš išvardytų nelaimingų atsitikimų, kurio metu buvote sužeistas (-a)? (Įskaitant apsinuodijimą, gyvūnų arba vabzdžių sukeltą žalą. Neįskaitant kitų asmenų tyčiniais veiksmais sukeltų sužalojimų)",141
+AC1A,1,Taip,a) Kelių eismo įvykis,142
+,2,Ne,,143
+AC1B,1,Taip,b) Nelaimingas atsitikimas namuose,144
+,2,Ne,,145
+AC1C,1,Taip,c) Nelaimingas atsitikimas laisvalaikio metu,146
+,2,Ne,,147
+AC2,1,"Taip, buvau paguldytas (-a) į ligoninę ar kitą sveikatos priežiūros įstaigą ",Ar dėl šio nelaimingo atsitikimo Jums reikėjo medicinos pagalbos?,148
+,2,"Taip, buvo suteikta gydytojo ar slaugytojo ambulatorinė pagalba",,149
+,3,Sveikatos priežiūros specialisto pagalbos neprireikė,,150
+,-2,Netaikoma,,151
+,,,,152
+,,,Neatvykimas į darbą (dėl sveikatos problemų),153
+,,,,154
+AW1,1,Taip,"Ar per pastaruosius 12 mėn. pasitaikė atvejų, kai nedirbote dėl savo sveikatos problemų? (Pagalvokite apie visas ligas, sužeidimus ir kitas sveikatos problemas, kurių turėjote ir dėl kurių nedirbote)",155
+,2,Ne,,156
+,-2,Netaikoma,,157
+AW2,1 - 365,Dienų skaičius,Kiek iš viso dienų per pastaruosius 12 mėn. nedirbote dėl savo sveikatos problemų?,158
+,-1,Nenurodė,,159
+,-2,Netaikoma,,160
+,,,,161
+,,,Fizinių ir jutimo funkcijų sutrikimai,162
+,,,,163
+PL1,1,Taip  ,Ar nešiojate akinius ar kontaktinius lęšius?,164
+,2,Ne  ,,165
+,3,"Aš aklas (-a), visai nematau  ",,166
+PL2,1,"Ne, matau gerai  ",Jei PL1 = 1: Ar prastai matote net nešiodamas (-a) akinius ar kontaktinius lęšius? / Jei PL1 = 2: Ar prastai matote (ar turite regėjimo sutrikimų)? ,167
+,2,Šiek tiek prastai ,,168
+,3,Labai prastai ,,169
+,-2,Netaikoma,,170
+PL3,1,Taip  ,Ar naudojatės klausos aparatu?,171
+,2,Ne  ,,172
+,3,Esu visiškai kurčias (-ia)  ,,173
+PL4,1,"Ne, girdžiu gerai  ","Jei PL3 = 1: Ar bendraudamas (-a) su kitu asmeniu, kai kambaryje tylu, prastai girdite net jei naudojatės klausos aparatu? / Jei PL3 = 2: Ar bendraudamas (-a) su kitu asmeniu, kai kambaryje tylu prastai girdite? ",174
+,2,Šiek tiek prastai ,,175
+,3,Labai prastai  ,,176
+,4,Negirdžiu / negaliu girdėti  ,,177
+,-2,Netaikoma,,178
+PL5,1,"Ne, girdžiu gerai  ","Jei PL3 = 1: Ar bendraudamas (-a) su kitu asmeniu, kai kambaryje triukšminga, prastai girdite net jei naudojatės klausos aparatu? / Jei PL3 = 2: Ar bendraudamas (-a) su kitu asmeniu, kai kambaryje triukšminga, prastai girdite?",179
+,2,Šiek tiek prastai ,,180
+,3,Labai prastai  ,,181
+,4,Negirdžiu / negaliu girdėti  ,,182
+,-2,Netaikoma,,183
+PL6,1,Nesunku  ,Ar Jums sunku lygiu paviršiumi be lazdos ar kitos vaikščiojimą lengvinančios priemonės nueiti pusės kilometro atstumą? ,184
+,2,Šiek tiek sunku ,,185
+,3,Labai sunku  ,,186
+,4,Negaliu / neįstengiu to padaryti  ,,187
+PL7,1,Nesunku  ,Ar Jums sunku užlipti ar nulipti 12 laiptelių? ,188
+,2,Šiek tiek sunku ,,189
+,3,Labai sunku  ,,190
+,4,Negaliu / neįstengiu to padaryti  ,,191
+,,,,192
+,,Atsakė 65 metų amžiaus ir vyresni respondentai.,Savipriežiūra,193
+,,,,194
+,,,"Ar paprastai Jums sunku atlikti kurį nors iš šių veiksmų 
+niekam nepadedant?",195
+PC1A,1,Nesunku,a) Pavalgyti,196
+,2,Šiek tiek sunku,,197
+,3,Labai sunku,,198
+,4,Negaliu / neįstengiu to atlikti,,199
+,-2,Netaikoma,,200
+PC1B,1,Nesunku,"b) Atsigulti į lovą ar atsikelti iš jos, atsisėsti ant kėdės ar pasikelti nuo jos",201
+,2,Šiek tiek sunku,,202
+,3,Labai sunku,,203
+,4,Negaliu / neįstengiu to atlikti,,204
+,-2,Netaikoma,,205
+PC1C,1,Nesunku,c) Apsirengti ir nusirengti,206
+,2,Šiek tiek sunku,,207
+,3,Labai sunku,,208
+,4,Negaliu / neįstengiu to atlikti,,209
+,-2,Netaikoma,,210
+PC1D,1,Nesunku,d) Naudotis tualetu,211
+,2,Šiek tiek sunku,,212
+,3,Labai sunku,,213
+,4,Negaliu / neįstengiu to atlikti,,214
+,-2,Netaikoma,,215
+PC1E,1,Nesunku,e) Maudytis vonioje ar duše,216
+,2,Šiek tiek sunku,,217
+,3,Labai sunku,,218
+,4,Negaliu / neįstengiu to atlikti,,219
+,-2,Netaikoma,,220
+PC2,1,"Taip, bent vieną iš šių veiksmų  ",Ar paprastai Jums kas nors padeda atlikti šiuos veiksmus (PC1A - PC1E)? ,221
+,2,Ne  ,,222
+,-2,Netaikoma,,223
+PC3,1,"Taip, bent vienam iš šių veiksmų  ",Jei PC2 = 1: Ar Jums reikia daugiau pagalbos? / Jei PC2 = 2: Ar Jums reikalinga pagalba?,224
+,2,Ne  ,,225
+,-1,"Nėra (nežino, atsisako nurodyti)",,226
+,-2,Netaikoma,,227
+,,,,228
+,,Atsakė 65 metų amžiaus ir vyresni respondentai.,Namų ruošos darbai,229
+,,,,230
+,,,"Ar Jums paprastai sunku atlikti kurį nors iš šių darbų, niekam nepadedant?",231
+HA1A,1,Nesunku,a) Ruošti valgį,232
+,2,Šiek tiek sunku,,233
+,3,Labai sunku,,234
+,4,Negaliu / neįstengiu to atlikti,,235
+,5,Netaikytina (niekada nebandė ar nėra būtinybės),,236
+,-2,Netaikoma,,237
+HA1B,1,Nesunku,b) Naudotis telefonu,238
+,2,Šiek tiek sunku,,239
+,3,Labai sunku,,240
+,4,Negaliu / neįstengiu to atlikti,,241
+,5,Netaikytina (niekada nebandė ar nėra būtinybės),,242
+,-2,Netaikoma,,243
+HA1C,1,Nesunku,c) Apsipirkti,244
+,2,Šiek tiek sunku,,245
+,3,Labai sunku,,246
+,4,Negaliu / neįstengiu to atlikti,,247
+,5,Netaikytina (niekada nebandė ar nėra būtinybės),,248
+,-2,Netaikoma,,249
+HA1D,1,Nesunku,d) Vartoti vaistus,250
+,2,Šiek tiek sunku,,251
+,3,Labai sunku,,252
+,4,Negaliu / neįstengiu to atlikti,,253
+,5,Netaikytina (niekada nebandė ar nėra būtinybės),,254
+,-2,Netaikoma,,255
+HA1E,1,Nesunku,e) Atlikti lengvus namų ruošos darbus,256
+,2,Šiek tiek sunku,,257
+,3,Labai sunku,,258
+,4,Negaliu / neįstengiu to atlikti,,259
+,5,Netaikytina (niekada nebandė ar nėra būtinybės),,260
+,-2,Netaikoma,,261
+HA1F,1,Nesunku,f) Retkarčiais atlikti sunkius namų ruošos darbus,262
+,2,Šiek tiek sunku,,263
+,3,Labai sunku,,264
+,4,Negaliu / neįstengiu to atlikti,,265
+,5,Netaikytina (niekada nebandė ar nėra būtinybės),,266
+,-2,Netaikoma,,267
+HA1G,1,Nesunku,g) Tvarkyti finansus ir kasdienes administracines užduotis,268
+,2,Šiek tiek sunku,,269
+,3,Labai sunku,,270
+,4,Negaliu / neįstengiu to atlikti,,271
+,5,Netaikytina (niekada nebandė ar nėra būtinybės),,272
+,-2,Netaikoma,,273
+HA2,1,"Taip, bent vieną iš šių darbų ",Ar Jums paprastai kas nors padeda atlikti šiuos darbus (HA1A - HA1G)? ,274
+,2,Ne  ,,275
+,-1,"Nėra (nežino, atsisako nurodyti)",,276
+,-2,Netaikoma,,277
+HA3,1,"Taip, bent vienam iš šių darbų ",Jei HA2 = 1: Ar Jums reikia daugiau pagalbos? / Jei HA2 = 2: Ar Jums reikalinga pagalba?,278
+,2,Ne  ,,279
+,-1,"Nėra (nežino, atsisako nurodyti)",,280
+,-2,Netaikoma,,281
+,,,,282
+,,,Skausmas,283
+,,,,284
+PN1,1,Nejaučiau  ,Kokio intensyvumo kūno skausmą jautėte per pastarąsias 4 savaites? ,285
+,2,Labai silpną  ,,286
+,3,Silpną  ,,287
+,4,Vidutinį  ,,288
+,5,Stiprų  ,,289
+,6,Labai stiprų  ,,290
+,-1,"Nėra (nežino, atsisako nurodyti)",,291
+PN2,1,Tokių atvejų nebuvo  ,"Ar per pastarąsias 4 savaites skausmas trukdė vykdyti įprastą veiklą (tiek dirbti ne namie, tiek atlikti namų ruošos darbus)? ",292
+,2,Šiek tiek trukdė ,,293
+,3,Vidutiniškai trukdė ,,294
+,4,Ganėtinai trukdė ,,295
+,5,Labai trukdė ,,296
+,-1,"Nėra (nežino, atsisako nurodyti)",,297
+,,,,298
+,,,Psichikos sveikata,299
+,,,,300
+,,,Kaip dažnai per pastarąsias 2 savaites Jums kilo bent viena iš išvardytų problemų?,301
+MH1A,1,Tokių atvejų nebuvo,a) Įprasta veikla mažai domino ar teikė mažai malonumo,302
+,2,Keletą dienų,,303
+,3,Daugiau kaip savaitę,,304
+,4,Beveik kasdien,,305
+,-1,"Nėra (nežino, atsisako nurodyti)",,306
+MH1B,1,Tokių atvejų nebuvo,"b) Jautėtės nusiminęs (-usi), prislėgtas (-a) ar nusivylęs (-usi)",307
+,2,Keletą dienų,,308
+,3,Daugiau kaip savaitę,,309
+,4,Beveik kasdien,,310
+,-1,"Nėra (nežino, atsisako nurodyti)",,311
+MH1C,1,Tokių atvejų nebuvo,"c) Buvo sunku užmigti, kankino nemiga arba miegojote per ilgai",312
+,2,Keletą dienų,,313
+,3,Daugiau kaip savaitę,,314
+,4,Beveik kasdien,,315
+,-1,"Nėra (nežino, atsisako nurodyti)",,316
+MH1D,1,Tokių atvejų nebuvo,"d) Jautėte nuovargį, energijos trūkumą",317
+,2,Keletą dienų,,318
+,3,Daugiau kaip savaitę,,319
+,4,Beveik kasdien,,320
+,-1,"Nėra (nežino, atsisako nurodyti)",,321
+MH1E,1,Tokių atvejų nebuvo,e) Neturėjote apetito arba persivalgėte,322
+,2,Keletą dienų,,323
+,3,Daugiau kaip savaitę,,324
+,4,Beveik kasdien,,325
+,-1,"Nėra (nežino, atsisako nurodyti)",,326
+MH1F,1,Tokių atvejų nebuvo,"f) Jautėtės blogai, manėte, kad esate nevykėlis (-ė), nuvylėte savo šeimą arba nusivylėte savimi ",327
+,2,Keletą dienų,,328
+,3,Daugiau kaip savaitę,,329
+,4,Beveik kasdien,,330
+,-1,"Nėra (nežino, atsisako nurodyti)",,331
+MH1G,1,Tokių atvejų nebuvo,"g) Buvo sunku susitelkti kokiai nors veiklai, pvz., skaityti laikraštį ar žiūrėti televizorių",332
+,2,Keletą dienų,,333
+,3,Daugiau kaip savaitę,,334
+,4,Beveik kasdien,,335
+,-1,"Nėra (nežino, atsisako nurodyti)",,336
+MH1H,1,Tokių atvejų nebuvo,"h) Judėjote ar kalbėjote taip lėtai, kad kiti žmonės atkreipė į tai dėmesį. Arba atvirkščiai – buvote toks (-ia) neramus (-i) ir nenustygstantis (-i), todėl judėjote žymiai daugiau nei įprastai",337
+,2,Keletą dienų,,338
+,3,Daugiau kaip savaitę,,339
+,4,Beveik kasdien,,340
+,-1,"Nėra (nežino, atsisako nurodyti)",,341
+,,,,342
+,,,SVEIKATOS PRIEŽIŪRA,343
+,,,,344
+,,,Naudojimasis stacionaro ar dienos stacionaro paslaugomis,345
+,,,,346
+HO1,1,Taip,"Ar per pastaruosius 12 mėn. buvote paguldytas (-a) į ligoninę ir joje praleidote mažiausiai vieną naktį?
+(Neįskaitant apsilankymų skubios pagalbos skyriuje (neliekant jame nakvoti) ar kitoje ambulatorinėje įstaigoje)
+",347
+,2,Ne,,348
+HO2,1 - 365,Naktų skaičius,Kiek iš viso naktų Jūs praleidote ligoninėje?,349
+,-2,Netaikoma,,350
+HO3,1,Taip,"Ar per pastaruosius 12 mėn. buvote paguldytas (-a) į dienos stacionarą, t. y. buvote paguldytas (-a) į ligoninę diagnozei nustatyti, gydymui ar kitoms procedūroms, bet Jums nereikėjo likti nakvoti?",351
+,2,Ne,,352
+HO4,1 - 365,Kartų skaičius,Kiek kartų per pastaruosius 12 mėn. gydėtės dienos stacionare?,353
+,-2,Netaikoma,,354
+,,,,355
+,,,Naudojimasis ambulatorinėmis ar priežiūros namuose paslaugomis,356
+,,,,357
+AM1,1,Mažiau nei prieš 6 mėn.  ,"Kada paskutinį kartą lankėtės pas odontologą (dantų gydytoją) ar ortodontą dėl savo sveikatos (t. y. neįskaitant tų atvejų, kai lydėjote vaiką ar sutuoktinį (-ę) ir kt.)?
+",358
+,2,Nuo 6 mėn. iki 12 mėn.  ,,359
+,3,Prieš 12 mėn. ar daugiau ,,360
+,4,Niekada  ,,361
+AM2,1,Mažiau nei prieš 12 mėn.  ,Kada paskutinį kartą kreipėtės į bendrosios praktikos ar šeimos gydytoją dėl savo sveikatos?,362
+,2,Prieš 12 mėn. ar daugiau ,,363
+,3,Niekada  ,,364
+AM3,0 - 99,Kartų skaičius,Kiek kartų per pastarąsias 4 savaites kreipėtės į bendrosios praktikos ar šeimos gydytoją dėl savo sveikatos?,365
+,-2,Netaikoma,,366
+AM4,1,Mažiau nei prieš 12 mėn.  ,"Kada paskutinį kartą kreipėtės į gydytoją specialistą ar chirurgą dėl savo sveikatos? (Įskaitant apsilankymus pas odontologą-chirurgą, bet neįskaitant apsilankymų pas odontologą)
+",367
+,2,Prieš 12 mėn. ar daugiau ,,368
+,3,Niekada  ,,369
+AM5,0 - 99,Kartų skaičius,Kiek kartų per pastarąsias 4 savaites kreipėtės į gydytoją specialistą ar chirurgą dėl savo sveikatos?,370
+,-2,Netaikoma,,371
+,,,Ar per pastaruosius 12 mėn. dėl savo sveikatos kreipėtės į...?,372
+AM6A,1,Taip,a) Fizioterapeutą ar kineziterapeutą,373
+,2,Ne,,374
+AM6B,1,Taip,"b) Psichologą, psichiatrą ar psichoterapeutą",375
+,2,Ne,,376
+AM7,1,Taip,"Ar per pastaruosius 12 mėn. Jūs pats (-i) naudojotės priežiūros namuose paslaugomis? (Gydytojo vizitai į namus neįskaitomi)
+",377
+,2,Ne,,378
+,,,,379
+,,,Vaistų vartojimas,380
+,,,,381
+MD1,1,Taip,Ar per pastarąsias 2 savaites vartojote gydytojo Jums išrašytų (receptinių) vaistų? (Moterims neįskaitant kontraceptinių piliulių ir kitų hormoninių preparatų),382
+,2,Ne,,383
+,-1,"Nėra (nežino, atsisako nurodyti)",,384
+MD2,1,Taip,"Ar per pastarąsias 2 savaites vartojote kokių nors Jums gydytojo neišrašytų vaistų, vaistažolių preparatų, vitaminų?",385
+,2,Ne,,386
+,-1,"Nėra (nežino, atsisako nurodyti)",,387
+,,,,388
+,,,Ligų prevencija,389
+,,,,390
+PA1,MMYYYY,"MM (mėnuo): 01 - 12; YYYY (metai): 2013 - 2014 ",Kada paskutinį kartą skiepijotės nuo gripo?,391
+,0,"Seniai (daugiau nei prieš metus) / Niekada  
+",,392
+,-1,"Nėra (nežino, atsisako nurodyti)",,393
+,,,Kada paskutinį kartą medicinos specialistas Jums matavo / tikrino?,394
+PA2,1,Per pastaruosius 12 mėn. ,a) Kraujospūdį,395
+,2,Nuo 1 m. iki 3 m.,,396
+,3,Nuo 3 m. iki 5 m.,,397
+,4,Prieš 5 m. ir daugiau ,,398
+,5,Niekada,,399
+,-1,"Nėra (nežino, atsisako nurodyti)",,400
+PA3,1,Per pastaruosius 12 mėn. ,b) Cholesterolio kiekį kraujyje,401
+,2,Nuo 1 m. iki 3 m.,,402
+,3,Nuo 3 m. iki 5 m.,,403
+,4,Prieš 5 m. ir daugiau ,,404
+,5,Niekada,,405
+,-1,"Nėra (nežino, atsisako nurodyti)",,406
+PA4,1,Per pastaruosius 12 mėn. ,c) Cukraus kiekį kraujyje,407
+,2,Nuo 1 m. iki 3 m.,,408
+,3,Nuo 3 m. iki 5 m.,,409
+,4,Prieš 5 m. ir daugiau ,,410
+,5,Niekada,,411
+,-1,"Nėra (nežino, atsisako nurodyti)",,412
+PA5,1,Per pastaruosius 12 mėn. ,"Kada paskutinį kartą Jums buvo atliktas slapto kraujavimo (kraujo likučių išmatose) tyrimas?
+(Testas kraujavimui virškinimo trakte nustatyti)",413
+,2,Nuo 1 m. iki 2 m.,,414
+,3,Nuo 2 m. iki 3 m.,,415
+,4,Prieš 3 m. ir daugiau ,,416
+,5,Niekada,,417
+,-1,"Nėra (nežino, atsisako nurodyti)",,418
+PA6,1,Per pastaruosius 12 mėn. ,"Kada paskutinį kartą Jums darė kolonoskopiją (endoskopinį žarnyno tyrimą)?
+(Žarnyno apžiūra kolonoskopu)
+",419
+,2,Nuo 1 m. iki 5 m.,,420
+,3,Nuo 5 m. iki 10 m.,,421
+,4,Prieš 10 m. ir daugiau ,,422
+,5,Niekada,,423
+,-1,"Nėra (nežino, atsisako nurodyti)",,424
+PA7,1,Per pastaruosius 12 mėn. ,Kada paskutinį kartą Jums buvo atlikta mamografija (krūtų rentgenograma)? ( Atsakė tik moterys).,425
+,2,Nuo 1 m. iki 2 m.,,426
+,3,Nuo 2 m. iki 3 m.,,427
+,4,Prieš 3 m. ir daugiau ,,428
+,5,Niekada,,429
+,-1,"Nėra (nežino, atsisako nurodyti)",,430
+,-2,Netaikoma,,431
+PA8,1,Per pastaruosius 12 mėn. ,"Kada paskutinį kartą Jums buvo tirtas gimdos kaklelio tepinėlis (atliktas PAP testas)? (Atsakė tik moterys).
+",432
+,2,Nuo 1 m. iki 2 m.,,433
+,3,Nuo 2 m. iki 3 m.,,434
+,4,Prieš 3 m. ir daugiau ,,435
+,5,Niekada,,436
+,-1,"Nėra (nežino, atsisako nurodyti)",,437
+,-2,Netaikoma,,438
+,,,,439
+,,,Nepatenkinti sveikatos priežiūros paslaugų poreikiai ,440
+,,,,441
+,,,"Ar per pastaruosius 12 mėn. buvo atvejis, kai teko atidėti kreipimąsi dėl sveikatos priežiūros paslaugų, nes buvo:",442
+UN1A,1,Taip,"a) ilgos eilės (buvo sunku gauti taloną, nukreipimą ir kt.)",443
+,2,Ne,,444
+,3,Nereikėjo sveikatos priežiūros paslaugų,,445
+,-1,"Nėra (nežino, atsisako nurodyti)",,446
+UN1B,1,Taip,b) atstumo ar transporto problemų,447
+,2,Ne,,448
+,3,Nereikėjo sveikatos priežiūros paslaugų,,449
+,-1,"Nėra (nežino, atsisako nurodyti)",,450
+,,,"Ar per pastaruosius 12 mėn. buvo atvejis, kai Jums reikėjo sveikatos priežiūros paslaugų, bet jų atsisakėte, nes neįstengėte susimokėti (buvo per brangu)?",451
+UN2A,1,Taip,a) Gydytojo paslaugų (išskyrus odontologo),452
+,2,Ne,,453
+,3,Nereikėjo teikiamų paslaugų,,454
+,-1,"Nėra (nežino, atsisako nurodyti)",,455
+UN2B,1,Taip,b) Odontologo (dantų gydytojo) paslaugų,456
+,2,Ne,,457
+,3,Nereikėjo teikiamų paslaugų,,458
+,-1,"Nėra (nežino, atsisako nurodyti)",,459
+UN2C,1,Taip,c) Gydytojo išrašytų vaistų,460
+,2,Ne,,461
+,3,Nereikėjo teikiamų paslaugų,,462
+,-1,"Nėra (nežino, atsisako nurodyti)",,463
+UN2D,1,Taip,"d) Psichikos sveikatos paslaugų (pvz., teikiamų psichologo ar psichiatro)",464
+,2,Ne,,465
+,3,Nereikėjo teikiamų paslaugų,,466
+,-1,"Nėra (nežino, atsisako nurodyti)",,467
+,,,,468
+,,,SVEIKATĄ LEMIANTYS VEIKSNIAI,469
+,,,,470
+,,,Svoris ir ūgis,471
+,,,,472
+BM1,50 - 250,Skaičius (cm),Koks Jūsų ūgis?,473
+,-1,"Nėra (nežino, atsisako nurodyti)",,474
+BM2,20 - 250,Skaičius (kg),Koks Jūsų svoris?,475
+,-1,"Nėra (nežino, atsisako nurodyti)",,476
+,,,,477
+,,,Fizinis aktyvumas,478
+,,,,479
+PE1,1,Daugiausia sėdite ar stovite  ,"Kas geriausiai apibūdintų tai, ką veikiate dirbdamas (-a)?",480
+,2,Daugiausia vaikštote ar atliekate vidutinių fizinių pastangų reikalaujantį darbą  ,,481
+,3,Daugiausia dirbate sunkų fizinį darbą  ,,482
+,4,Neatlieka jokių darbinių užduočių  ,,483
+,-1,"Nėra (nežino, atsisako nurodyti)",,484
+PE2,1 - 7,Dienų skaičius  ,Kiek paprastai dienų per savaitę einate pėsčiomis į tam tikras vietas ir grįžtate iš jų užtrukdamas (-a) mažiausiai 10 min. be pertraukos?,485
+,0,Kartais užsiimu šia fizine veikla arba niekada,,486
+,-1,"Nėra (nežino, atsisako nurodyti)",,487
+PE3,1,10 – 29 min. ,"Kiek paprastai laiko per dieną užtrunkate 
+eidamas (-a) pėsčiomis į tam tikras 
+vietas ir grįždamas (-a) iš jų? 
+",488
+,2,30 – 59 min. ,,489
+,3,Nuo 1 val. iki 2 val. ,,490
+,4,Nuo 2 val. iki 3 val. ,,491
+,5,3 val. ar daugiau ,,492
+,-1,"Nėra (nežino, atsisako nurodyti)",,493
+,-2,Netaikoma,,494
+PE4,1 - 7,Dienų skaičius  ,Kiek paprastai dienų per savaitę važiuojate dviračiu į tam tikras vietas ir grįžtate iš jų užtrukdamas (-a) mažiausiai 10 min. be pertraukos?,495
+,0,Kartais užsiimu šia fizine veikla arba niekada,,496
+,-1,"Nėra (nežino, atsisako nurodyti)",,497
+PE5,1,10 – 29 min. ,"Kiek paprastai laiko per dieną užtrunkate 
+važiuodamas (-a) dviračiu į tam tikras 
+vietas ir grįždamas (-a) iš jų?",498
+,2,30 – 59 min. ,,499
+,3,Nuo 1 val. iki 2 val. ,,500
+,4,Nuo 2 val. iki 3 val. ,,501
+,5,3 val. ar daugiau ,,502
+,-1,"Nėra (nežino, atsisako nurodyti)",,503
+,-2,Netaikoma,,504
+PE6,1 - 7,Dienų skaičius  ,"Kiek paprastai dienų per savaitę sportuojate, 
+užsiimate kūno rengyba ar aktyvia 
+laisvalaikio veikla mažiausiai 
+10 min. be pertraukos? 
+",505
+,0,Kartais užsiimu šia fizine veikla arba niekada,,506
+,-1,"Nėra (nežino, atsisako nurodyti)",,507
+PE7,HHMM,"HH (valandos): 00 - 99, MM (minutės): 00 - 59","Kiek paprastai laiko per savaitę sportuojate, užsiimate kūno rengyba ar aktyvia laisvalaikio veikla?",508
+,-1,"Nėra (nežino, atsisako nurodyti)",,509
+,-2,Netaikoma,,510
+PE8,1 - 7,Dienų skaičius  ,"Kiek paprastai dienų per savaitę atliekate konkrečius veiksmus, skirtus sustiprinti raumenis, pvz., darote ištvermės ar jėgos pratimus? ",511
+,0,Kartais užsiimu šia fizine veikla arba niekada,,512
+,-1,"Nėra (nežino, atsisako nurodyti)",,513
+,,,,514
+,,,Vaisių ir daržovių vartojimas,515
+,,,,516
+FV1,1,Vieną ar daugiau kartų per dieną  ,"Kaip dažnai valgote vaisius?
+(Įskaitant šviežių vaisių sultis, bet neįskaitant sulčių, pagamintų iš koncentrato ar perdirbtų vaisių)",517
+,2,4 – 6 kartus per savaitę  ,,518
+,3,1 – 3 kartus per savaitę  ,,519
+,4,Rečiau nei kartą per savaitę  ,,520
+,5,Niekada  ,,521
+,-1,"Nėra (nežino, atsisako nurodyti)",,522
+FV2,1 - 99,Skaičius,Kiek bet kokios rūšies vaisių porcijų suvalgote kiekvieną dieną? ,523
+,-1,"Nėra (nežino, atsisako nurodyti)",,524
+,-2,Netaikoma,,525
+FV3,1,Vieną ar daugiau kartų per dieną  ,"Kaip dažnai valgote daržoves ar salotas (išskyrus bulves ir iš koncentrato pagamintas sultis)?
+(Įskaitant šiltas ir šaltas daržovių sriubas ir šviežių daržovių sultis)",526
+,2,4 – 6 kartus per savaitę  ,,527
+,3,1 – 3 kartus per savaitę  ,,528
+,4,Rečiau nei kartą per savaitę  ,,529
+,5,Niekada  ,,530
+,-1,"Nėra (nežino, atsisako nurodyti)",,531
+FV4,1 - 99,Skaičius,"Kiek daržovių ar salotų porcijų suvalgote 
+kiekvieną dieną? 
+",532
+,-1,"Nėra (nežino, atsisako nurodyti)",,533
+,-2,Netaikoma,,534
+,,,,535
+,,,Rūkymas,536
+,,,,537
+SK1,1,"Taip, kasdien  ",Ar Jūs rūkote?,538
+,2,"Taip, kartais  ",,539
+,3,Nerūkau  ,,540
+,-1,"Nėra (nežino, atsisako nurodyti)",,541
+SK2,1,Cigaretes (pramoninės gamybos arba rankų darbo)  ,Kokius tabako gaminius dažniausiai rūkote?,542
+,2,Cigarus,,543
+,3,Pypkinį tabaką  ,,544
+,4,Kita (kaljanas ir pan.) ,,545
+,-2,Netaikoma,,546
+SK3,1 - 99,Skaičius,Kiek vidutiniškai cigarečių surūkote kiekvieną dieną?,547
+,-1,"Nėra (nežino, atsisako nurodyti)",,548
+,-2,Netaikoma,,549
+SK4,1,Niekada arba beveik niekada  ,Kaip dažnai tenka būti prirūkytose patalpose?,550
+,2,Trumpiau nei 1 val. per dieną  ,,551
+,3,1 val. per dieną arba ilgiau  ,,552
+,-1,"Nėra (nežino, atsisako nurodyti)",,553
+,,,,554
+,,,Alkoholio vartojimas,555
+,,,,556
+AL1,1,Kasdien arba beveik kasdien  ,"Kaip dažnai per pastaruosius 12 mėn. vartojote 
+bet kokios rūšies alkoholinius gėrimus (alų, vyną, sidrą, stipriuosius gėrimus, kokteilius, likerį, namų gamybos alkoholinius gėrimus ir pan.)? ",557
+,2,5 – 6 dienas per savaitę  ,,558
+,3,3 – 4 dienas per savaitę  ,,559
+,4,1 – 2 dienas per savaitę  ,,560
+,5,2 – 3 dienas per mėnesį  ,,561
+,6,Kartą per mėnesį  ,,562
+,7,Rečiau nei kartą per mėnesį  ,,563
+,8,"Nevartojau per pastaruosius 12 mėn., nes aš nebevartoju alkoholio  ",,564
+,9,Niekada arba ragavau tik keletą kartų gyvenime,,565
+,-1,"Nėra (nežino, atsisako nurodyti)",,566
+AL2,1,Visas 4 dienas  ,Prašau pagalvoti apie dienas nuo pirmadienio iki ketvirtadienio. Kiek paprastai iš šių 4 dienų vartojate alkoholį?,567
+,2,3-is iš 4 dienų  ,,568
+,3,2-i iš 4 dienų  ,,569
+,4,1-ą iš 4 dienų  ,,570
+,5,Nei vieną iš 4 dienų  ,,571
+,-1,"Nėra (nežino, atsisako nurodyti)",,572
+,-2,Netaikoma,,573
+AL3,1,16 arba daugiau standartinių alkoholio vienetų (1 SAV laikoma 10 g gryno etilo alkoholio) per dieną,"Nuo pirmadienio iki ketvirtadienio, kai vartojate alkoholį, kiek alkoholinių gėrimų Jūs vidutiniškai išgeriate per dieną?",574
+,2,10 - 15 SAV per dieną,,575
+,3,6 - 9 SAV per dieną,,576
+,4,4 - 5 SAV per dieną,,577
+,5,3 SAV per dieną,,578
+,6,2 SAV per dieną,,579
+,7,1 SAV per dieną,,580
+,8,0 SAV per dieną,,581
+,-1,"Nėra (nežino, atsisako nurodyti)",,582
+,-2,Netaikoma,,583
+AL4,1,Visas 3 dienas  ,Prašau pagalvoti apie dienas nuo penktadienio iki sekmadienio. Kiek paprastai iš šių 3 dienų vartojate alkoholį?,584
+,2,2-i iš 3 dienų  ,,585
+,3,1-ą iš 3 dienų  ,,586
+,4,Nei vieną iš trijų dienų  ,,587
+,-1,"Nėra (nežino, atsisako nurodyti)",,588
+,-2,Netaikoma,,589
+AL5,1,16 arba daugiau standartinių alkoholio vienetų (1 SAV laikoma 10 g gryno etilo alkoholio) per dieną,"Nuo penktadienio iki sekmadienio, kai vartojate alkoholį, kiek alkoholinių gėrimų Jūs vidutiniškai išgeriate per dieną?",590
+,2,10 - 15 SAV per dieną,,591
+,3,6 - 9 SAV per dieną,,592
+,4,4 - 5 SAV per dieną,,593
+,5,3 SAV per dieną,,594
+,6,2 SAV per dieną,,595
+,7,1 SAV per dieną,,596
+,8,0 SAV per dieną,,597
+,-1,"Nėra (nežino, atsisako nurodyti)",,598
+,-2,Netaikoma,,599
+AL6,1,Kasdien ar beveik kasdien  ,"Kaip dažnai per pastaruosius 12 mėn. pasitaikė atvejų, kai viena proga išgėrėte 1,5 litro ar daugiau alaus, 6 taures (600 ml) ar daugiau vyno arba 5 taureles (200 ml) ar daugiau degtinės, arba kitų stiprių alkoholinių gėrimų? Pvz., pobūvyje, vakarieniaudamas (-a), pramogaudamas (-a) su draugais ar namuose būdamas (-a) vienas (-a) ir t. t. (Nurodytas alkoholio kiekis prilygsta 6 ir daugiau SAV) ",600
+,2,5 – 6 dienas per savaitę  ,,601
+,3,3 – 4 dienas per savaitę  ,,602
+,4,1 – 2 dienas per savaitę  ,,603
+,5,2 – 3 dienas per mėnesį  ,,604
+,6,Kartą per mėnesį  ,,605
+,7,Rečiau nei kartą per mėnesį  ,,606
+,8,Nei karto per pastaruosius 12 mėn.  ,,607
+,9,Niekada gyvenime  ,,608
+,-1,"Nėra (nežino, atsisako nurodyti)",,609
+,-2,Netaikoma,,610
+,,,,611
+,,,Socialinė pagalba,612
+,,,,613
+SS1,1,Nei vieno  ,"Kiek turite artimų žmonių, kuriais galėtumėte pasikliauti kilus rimtai asmeninei problemai?",614
+,2,1 ar 2 asmenis ,,615
+,3,3 – 5 asmenis ,,616
+,4,6 ir daugiau asmenų ,,617
+,-1,"Nėra (nežino, atsisako nurodyti)",,618
+SS2,1,Labai  ,"Kiek artimieji (šeimos nariai, draugai ir kt.) domisi tuo, ką Jūs veikiate?",619
+,2,Šiek tiek  ,,620
+,3,Vidutiniškai  ,,621
+,4,Mažai  ,,622
+,5,Nesidomi  ,,623
+,-1,"Nėra (nežino, atsisako nurodyti)",,624
+SS3,1,Labai lengva  ,"Ar Jums būtų lengva gauti praktiškos pagalbos iš kaimynų, jei jos prireiktų? (Pvz., atliekant darbus, kai reikia patarimo, pinigų ir kt.)",625
+,2,Lengva  ,,626
+,3,Vidutiniškai lengva  ,,627
+,4,Sunku  ,,628
+,5,Labai sunku  ,,629
+,-1,"Nėra (nežino, atsisako nurodyti)",,630
+,,,,631
+,,,Neformalios priežiūros ar pagalbos teikimas ,632
+,,,,633
+IC1,1,Taip,"Ar Jūs bent kartą per savaitę prižiūrite ar padedate vienam ar daugiau asmenų, turinčių su senatve, lėtiniais 
+susirgimais ar negalia susijusių problemų? (Neįskaitant priežiūros, kuri yra Jūsų tiesioginis darbas)",634
+,2,Ne,,635
+,-1,"Nėra (nežino, atsisako nurodyti)",,636
+IC2,1,Jūsų šeimos narys (-iai)  ,Ar šis asmuo (asmenys) yra:,637
+,2,Ne Jūsų šeimos narys (-iai)  ,,638
+,-2,Netaikoma,,639
+IC3,1,Mažiau nei 10 val. per savaitę  ,Kiek valandų per savaitę prižiūrite ar padedate šiam asmeniui (šiems asmenims)? ,640
+,2,Nuo 10 val. iki 20 val. per savaitę  ,,641
+,3,20 ar daugiau val. per savaitę  ,,642
+,-2,Netaikoma,,643

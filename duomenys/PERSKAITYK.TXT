@@ -6,3 +6,10 @@ https://open-data-ls-osp-sdg.hub.arcgis.com/datasets/26d03b90d0db4a1190279c58917
 Kintamųjų aprašymai:
 https://open-data-ls-osp-sdg.hub.arcgis.com/datasets/624d819b712d4c1c9da01d6424636176_0/explore
 
+2014 m. atlikto gyventojų sveikatos statistinio tyrimo duomenys platinami pagal CC BY 4.0 licenciją
+šaltinis:
+https://open-data-ls-osp-sdg.hub.arcgis.com/datasets/d7eb3a56a4924b2192c9258a38c92b26_0/about
+Patys duomenys:
+https://open-data-ls-osp-sdg.hub.arcgis.com/datasets/d7eb3a56a4924b2192c9258a38c92b26_0/explore
+Kintamųjų aprašymai:
+https://open-data-ls-osp-sdg.hub.arcgis.com/datasets/cdbf51cb724a464b8d90b51c4b8f302d_0/explore
