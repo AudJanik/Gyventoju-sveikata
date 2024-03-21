@@ -1,0 +1,8 @@
+2019 m. atlikto gyventojų sveikatos statistinio tyrimo duomenys platinami pagal CC BY 4.0 licenciją
+šaltinis:
+https://open-data-ls-osp-sdg.hub.arcgis.com/datasets/26d03b90d0db4a1190279c58917b1dea_0/about
+Patys duomenys:
+https://open-data-ls-osp-sdg.hub.arcgis.com/datasets/26d03b90d0db4a1190279c58917b1dea_0/explore
+Kintamųjų aprašymai:
+https://open-data-ls-osp-sdg.hub.arcgis.com/datasets/624d819b712d4c1c9da01d6424636176_0/explore
+
