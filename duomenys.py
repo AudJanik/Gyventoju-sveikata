@@ -12,7 +12,9 @@ class Duomenys:
         self.df = pd.DataFrame()
         self.kintamieji = [
             'pid', 'sex', 'age', 'citizen', 'ap', 'm_k', 'hs1', 'hs2', 'cd2', 'pn1', 'pa1', 'pe6', 'sk1', 'al1',
-            'ho12', 'ho34', 'am3', 'bm1', 'bm2', 'dh1', 'dh4']
+            'ho12', 'ho34', 'am3', 'bm1', 'bm2', 'dh1']
+        # am3 atsakymų nėra >1000 žmonių
+        # dh4 atsakymų nėra >2000 žmonių
         self.atitikmenys = {'pid': 'ID',
                             'sex': 'Lytis',
                             'age': 'Amžius',
@@ -33,12 +35,15 @@ class Duomenys:
                             'bm1': 'Ūgis, cm',
                             'bm2': 'Svoris, kg',
                             'dh1': 'Vaisių porcijos per dieną',
-                            'dh4': 'Daržovių porcijos per dieną'
+                            #'dh4': 'Daržovių porcijos per dieną'
                             }
         self.kintamieji_išskirčių_tikrinimui = [
-            'Amžius', 'Naktų ligoninėje per metus', 'Kartai stacionare per metus', 
+            'Amžius',
+            #'Naktų ligoninėje per metus',   #  absoliuti dauguma ten nesilankė
+            #'Kartai stacionare per metus',  #  absoliuti dauguma ten nesilankė
             'Kartai pas šeimos gydytoją per 4 sav.', 'Ūgis, cm', 'Svoris, kg',
-            'Vaisių porcijos per dieną', 'Daržovių porcijos per dieną'
+            'Vaisių porcijos per dieną',
+            #'Daržovių porcijos per dieną'
         ]
         self.df = pd.DataFrame()
         self.csv2pd()  # nuskaitymas
