@@ -20,13 +20,15 @@ class Duomenys:
         # self.kintamojo_paaišknimas() # pridėti kintamųjų paaiškinimus
         print(f'{metai} m. gyventojų sveikatos duomenys įkelti į vidinę strukūrą.')
 
-    def csv2pd(self, kintamųjų_sąrašas=[]):
+    def info(self):
+        self.df.info()
+
     def csv2pd(self):
         # nuskaityti csv
-        df = pd.read_csv('duomenys/2019_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
+        self.df = pd.read_csv(self.csv_duomenys)
         # artinkti norimus kintamuosius - Audrius
-        nauja_lentele = df[self.kintamieji]
-        nauja_lentele.rename(columns=self.atitikmenys,inplace=True)
+        self.df = self.df[self.kintamieji]
+        self.df.rename(columns=self.atitikmenys, inplace=True)
 
 
 
@@ -35,19 +37,28 @@ class Duomenys:
         pass
 
     def valymas(self):
-        # tuščių reikšmių, išskirčių atmetimas - Mindaugas
+        # tuščių reikšmių atmetimas - Mindaugas
         self.df = self.df.dropna()
         print(' - atmestos tuščios eilutės')
 
+    def atmesti_isskirtis(self, pasirinkti_kintamieji):
+        # išskirčių atmetimas pagal IQR - Mindaugas
+        pass
+
+    def gauti_duomenis(self):
+        return self.df
 
     def gauti_sutvarkytus_duomenis(self):
-        self.valymas() # valymas
+        self.valymas()  # valymas
+        self.atmesti_isskirtis(['age'])
         return self.df
 
 
 def main():
     duomenys2019 = Duomenys(2019)
-    print(duomenys2019.gauti_sutvarkytus_duomenis())
+    df = duomenys2019.gauti_sutvarkytus_duomenis()
+    df.info()
+    # print(df)
 
 
 if __name__ == '__main__':
