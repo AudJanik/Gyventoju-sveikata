@@ -36,7 +36,27 @@ Analize.py
 
 Panaudotos bibliotekos: pandas, matplotlib, seaborn, matplotlib ir beautifulsoup
 
-Atlikome duomenų gryninimo veiksmus: atrinkome analizei reikalingus kintamuosiu, apjungėme 2014 ir 2019 m. duomenys į vieną duomenų bazę.
+Atlikome duomenų gryninimo veiksmus: atrinkome analizei reikalingus kintamuosius, apjungėme 2014 ir 2019 m. duomenys į vieną duomenų bazę.
 
 
 Lietuvos gyventojų sveikatos duomenų VIZUALIZACIJA
+
+Bendra sveikatos būklė pagal amziu 
+1-labai gera, 2-gera, 3-vidutiniska, 4-bloga, 5-labai bloga
+![Bendra sveikatos būklė pagal amziu.png](Bendra%20sveikatos%20b%3Fkl%3F%20pagal%20amziu.png)
+
+
+Bendra sveikatos būklė pagal lytį
+1-labai gera, 2-gera, 3-vidutiniska, 4-bloga, 5-labai bloga
+![Bendra sveikatos būklė pagal lytį.png](Bendra%20sveikatos%20b%3Fkl%3F%20pagal%20lyt%3F.png)
+
+
+Bendra sveikatos būklė pagal miestas/kaimas
+1-miestas, 2 - kaimas
+
+Lėtines ligos pagal amziu
+Ar serga lėtinėmis ligomis: 1- Taip, 2 - ne
+![Lėtines ligos pagal amziu.png](L%3Ftines%20ligos%20pagal%20amziu.png)
+
+Bendra sveikatos būklė pagal amžiaus kategorijas
+![Bendra sveikatos būklė pagal amžiaus kategorijas.png](Bendra%20sveikatos%20b%3Fkl%3F%20pagal%20am%9Eiaus%20kategorijas.png)
