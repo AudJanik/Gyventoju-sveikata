@@ -65,14 +65,26 @@ class Duomenys:
         print(' - Kintamieji pervadinti')
 
     def valyti(self):
-        # tuščių reikšmių atmetimas - Mindaugas
+        # prisiminti pradinį skaičių palyginimui
         eilučių_pradinis_skaičius = len(self.df)
+
+        # tuščių ir praleistus reikšmių atmetimas - Mindaugas
         self.df = self.df.dropna()
+        #self.df = self.df[self.df.notnull().all(axis=1)]
+
+        # Kai kuriuose kintamuosiuose neigiamomis reikšmėmis žymimi neanalizuotini duomenys, pvz.,
+        # -1 Nenurodyta
+        # -2 Netaikoma
+        # -3 Neįtraukiama į skaičiavimus (Proxy = 2 arba 3)
+        for k in self.df:
+            self.df = self.df[self.df[k] >= 0]
+
+        # pokytis
         eilučių_pokytis = eilučių_pradinis_skaičius - len(self.df)
         if eilučių_pokytis == 0:
-            print(' - Tuščių ar praleistų reikšmių nebuvo.')
+            print(' - Tuščių/praleistų ir neigiamų reikšmių nebuvo.')
         else:
-            print(' - Atmestos eilutės sutuščiomis ar praleistomis reikšmėmis:', eilučių_pokytis)
+            print(' - Atmestos eilutės sutuščiomis/praleistomis ir neigiamomis reikšmėmis:', eilučių_pokytis)
 
     def atmesti_isskirtis(self, pasirinkti_kintamieji):
         # išskirčių atmetimas pagal IQR - Mindaugas
