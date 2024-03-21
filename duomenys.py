@@ -36,8 +36,7 @@ class Duomenys:
                             'dh4': 'Daržovių porcijos per dieną'
                             }
         self.kintamieji_išskirčių_tikrinimui = [
-            'Amžius', 'Naktų ligoninėje per metus',
-            'Kartai stacionare per metus', 'Kartai pas šeimos gydytoją per 4 sav.',
+            'Amžius', 'Naktų ligoninėje per metus', 'Kartai stacionare per metus', 
             'Kartai pas šeimos gydytoją per 4 sav.', 'Ūgis, cm', 'Svoris, kg',
             'Vaisių porcijos per dieną', 'Daržovių porcijos per dieną'
         ]
