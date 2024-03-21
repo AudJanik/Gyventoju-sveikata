@@ -109,9 +109,9 @@ def main():
     #duomenys2019.info()
     duomenys2019.tvarkyti()
     duomenys2019.info()
-    df = duomenys2019.gauti_duomenis()
     duomenys2019.irasyti_csv('Sveikatos_duomenys_analizei.csv')
-    print(df)
+    #df = duomenys2019.gauti_duomenis()
+    #print(df)
 
 
 if __name__ == '__main__':
