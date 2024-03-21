@@ -1,22 +1,30 @@
 import pandas as pd
+import os
 
 class Duomenys:
     def __init__(self, metai):
         self.metai = metai
+        self.csv_duomenys = os.path.join('duomenys', metai + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
+        self.csv_aprašymai = os.path.join('duomenys', metai + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
         self.kintamieji = []
         self.df = pd.DataFrame()
 
-
-    def csv2pd(self, csv_rinkmena, kintamųjų_sąrašas):
+    def csv2pd(self, kintamųjų_sąrašas):
         # nuskaityti csv
-        df = pd.read_csv(csv_rinkmena)
+        self.df = pd.read_csv(self.csv_duomenys)
         # artinkti norimus kintamuosius - Audrius
 
     def kintamojo_paaišknimas(self):
         # nebūtina, galima rankiniu būdu - Mindaugas?
+        pass
 
     def valymas(self):
         # tuščių reikšmių, išskirčių atmetimas - Mindaugas
+        pass
 
-def main()
-    metai = 2019
+    def gauti_sutvarkytus_duomenis(self):
+        return self.df
+
+def main():
+    duomenys2019 = Duomenys(2019)
+    print(duomenys2019.gauti_sutvarkytus_duomenis())
