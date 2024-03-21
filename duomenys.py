@@ -4,8 +4,8 @@ import os
 class Duomenys:
     def __init__(self, metai):
         self.metai = metai
-        self.csv_duomenys = os.path.join('duomenys', metai + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
-        self.csv_aprašymai = os.path.join('duomenys', metai + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
+        self.csv_duomenys = os.path.join('duomenys', str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
+        self.csv_aprašymai = os.path.join('duomenys', str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
         self.kintamieji = []
         self.df = pd.DataFrame()
 
@@ -28,3 +28,6 @@ class Duomenys:
 def main():
     duomenys2019 = Duomenys(2019)
     print(duomenys2019.gauti_sutvarkytus_duomenis())
+
+if __name__ == '__main__':
+    main()
