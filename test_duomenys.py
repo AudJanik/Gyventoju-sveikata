@@ -10,7 +10,8 @@ def testiniai_duomenys():
     # duomenys_objektas = Duomenys(testiniai_duomenys)
     return kintamieji
 
-# def test_pervadinti_kintamuosius(testiniai_duomenys):
+def test_pervadinti_kintamuosius(testiniai_duomenys):
+    =duomenys_objektas.gauti_duomenis()
 
 def test_valyti(testiniai_duomenys):
     duomenys_objektas = Duomenys(2019, testiniai_duomenys)
@@ -18,12 +19,10 @@ def test_valyti(testiniai_duomenys):
     isvalyti_duomenis =duomenys_objektas.gauti_duomenis()
     for k in isvalyti_duomenis:
         assert not any(isvalyti_duomenis[k].isnull())
+        assert not any(isvalyti_duomenis[k]<0)
 
 
 
-
-
-           # assert isvalyti_duomenis[i]
 
 
 
