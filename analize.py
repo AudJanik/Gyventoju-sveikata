@@ -98,8 +98,7 @@ def bendroji_analize(df):
     plt.show()
 
     """
-    Bendra sveikatos būklė pagal lytį
-    1-labai gera, 2-gera, 3-vidutiniska, 4-bloga, 5-labai bloga
+    pagal lytį: 1-vyras, 2-moteris
     """
 
     sns.barplot(data=df, y='Lytis', hue='Lytis')
@@ -110,12 +109,11 @@ def bendroji_analize(df):
     plt.show()
 
     """
-    Bendra sveikatos būklė pagal miestas/kaimas
-    1-miestas, 2 - kaimas
+    pagal gyvenvietę:  1-miestas, 2-kaimas
     """
 
     sns.barplot(data=df, y='Miestas/Kaimas', hue='Miestas/Kaimas')
-    plt.title('Pasiskirstymas pagal gyvenvamą vietą' + metu_str)
+    plt.title('Pasiskirstymas pagal gyvenamą vietą' + metu_str)
     plt.ylabel('Asmenų skaičius')
     plt.xlabel('Miestas / Kaimas')
     plt.savefig('rezultatai/Gyvenvietė' + metu_str + '.png')
