@@ -10,7 +10,9 @@ Analizuojami: 2014 m. ir  2019 m. atlikto gyventojų sveikatos statistinio tyrim
 
 Darbas atliktas Python kalba, panaudojant bibliotekas: pandas, matplotlib, seaborn.
 
-PROJEKTO SEKA
+
+
+PROJEKTO svarbiausios dalys:
 
 Duomenys.py - duomenų nuskaitymas, kintamųjų atrinkimas, tvarkymas, 2014 ir 2019 m. duomenų jungimas.
 
@@ -34,3 +36,6 @@ Koreliacinė analizė
 ![paveikslas](rezultatai/Didžiausia%20koreliacija%20%20(2014%20m.).png)
 
 ![paveikslas](rezultatai/Didžiausia%20koreliacija%20%20(2019%20m.).png)
+
+
+test_duomenys.py - testasvimas
