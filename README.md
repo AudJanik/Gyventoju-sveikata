@@ -1,5 +1,5 @@
 
-Projektaso pavadinimas: Gyventojų sveikata
+Projekto pavadinimas: Gyventojų sveikata
 
 
 Darbo autoriai: Mindaugas B., Audrius Janikunas, Valentina Verikė.
