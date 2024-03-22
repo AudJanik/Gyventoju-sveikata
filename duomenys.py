@@ -63,7 +63,6 @@ class Duomenys:
         self.df = self.df[self.kintamieji]
         # Prijungus vėlesnių metų duomenis, galėti atskirti juos
         self.df['Metai'] = self.metai
-        self.df['pid'] = self.metai * 100000 + self.df['pid']
         print(f'{self.metai} m. gyventojų sveikatos duomenys įkelti į vidinę strukūrą. ' +
               ('' if self.ar_duomenys_sutvarkyti else 'Jie netvarkyti!'))
 
@@ -130,15 +129,22 @@ def main():
 
     csv_bazinis_vardas_saugojimui = 'Sveikatos_duomenys_analizei'
     norimi_metai = [2014, 2019]
+
+    df = pd.DataFrame()  # rezertuoti kintamąjį, kad PyCharm nerodytų įspėjimų
     for i, metai in enumerate(norimi_metai):
         duomenys = Duomenys(metai)
         duomenys.tvarkyti()
         # duomenys.info()
         duomenys.irasyti_csv(f'{csv_bazinis_vardas_saugojimui}_{metai}.csv')
+
+        # išstraukti duomenis dėl vėlesnio sujungimo
+        df1 = duomenys.gauti_duomenis()
+        if len(norimi_metai) > 1:
+            # pakeisti ID, kad nesidubliuotų su kitų metų, jei būtų
+            df1['ID'] = metai * 100000 + df1['ID']
         if i == 0:
-            df = duomenys.gauti_duomenis()
+            df = df1
         else:
-            df1 = duomenys.gauti_duomenis()
             df = pd.concat([df, df1], axis=0)  # prijungti eilutes
 
     df.to_csv(f'{csv_bazinis_vardas_saugojimui}.csv')
