@@ -3,6 +3,7 @@ import os
 
 
 class Duomenys:
+    # Duomenys tik vieniems pasirinktiems metams
     def __init__(self, metai):
         self.metai = metai
         self.csv_duomenys = os.path.join('duomenys',
@@ -11,45 +12,30 @@ class Duomenys:
             str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
         self.df = pd.DataFrame()
         self.kintamieji = [
-            'pid', 'sex', 'age', 'citizen', 'ap', 'm_k', 'hs1', 'hs2', 'cd2', 'pn1', 'pa1', 'pe6', 'sk1', 'al1',
-            'ho12', 'ho34', 'am3', 'bm1', 'bm2', 'dh1']
+            'pid', 'sex', 'age', 'm_k', 'hs1', 'hs2', 'pe6', 'sk1', 'al1', 'am3', 'bm1', 'bm2'
+        ]
         # am3 atsakymų nėra >1000 žmonių
         # dh4 atsakymų nėra >2000 žmonių
         self.atitikmenys = {'pid': 'ID',
                             'sex': 'Lytis',
                             'age': 'Amžius',
-                            'citizen': 'Pilietybė',
-                            'ap': 'Apskritis',
                             'm_k': 'Miestas/Kaimas',
                             'hs1': 'Bendra sveikatos būklė',
-                            'cd2': 'Bendra dantų būklė',
                             'hs2': 'Lėtines ligos',
-                            'pn1': 'Kūno skausmas',
-                            'pa1': 'Skiepai',
                             'pe6': 'Sportas',
                             'sk1': 'Rūkymas',
                             'al1': 'Alkoholis',
-                            'ho12': 'Naktų ligoninėje per metus',
-                            'ho34': 'Kartai stacionare per metus',
                             'am3': 'Kartai pas šeimos gydytoją per 4 sav.',
                             'bm1': 'Ūgis, cm',
-                            'bm2': 'Svoris, kg',
-                            'dh1': 'Vaisių porcijos per dieną',
-                            #'dh4': 'Daržovių porcijos per dieną'
+                            'bm2': 'Svoris, kg'
                             }
         self.kintamieji_išskirčių_tikrinimui = [
             'Amžius',
-            #'Naktų ligoninėje per metus',   #  absoliuti dauguma ten nesilankė
-            #'Kartai stacionare per metus',  #  absoliuti dauguma ten nesilankė
-            'Kartai pas šeimos gydytoją per 4 sav.', 'Ūgis, cm', 'Svoris, kg',
-            'Vaisių porcijos per dieną',
-            #'Daržovių porcijos per dieną'
+            'Kartai pas šeimos gydytoją per 4 sav.', 'Ūgis, cm', 'Svoris, kg'
         ]
         self.df = pd.DataFrame()
-        self.csv2pd()  # nuskaitymas
         self.ar_duomenys_sutvarkyti = False
-        print(f'{metai} m. gyventojų sveikatos duomenys įkelti į vidinę strukūrą. ' +
-              ('' if self.ar_duomenys_sutvarkyti else 'Jie netvarkyti!'))
+        self.csv2pd()  # nuskaitymas
 
     def info(self):
         print()
@@ -75,6 +61,9 @@ class Duomenys:
         self.df = pd.read_csv(self.csv_duomenys)
         # artinkti norimus kintamuosius - Audrius
         self.df = self.df[self.kintamieji]
+        self.df['Metai'] = self.metai
+        print(f'{self.metai} m. gyventojų sveikatos duomenys įkelti į vidinę strukūrą. ' +
+              ('' if self.ar_duomenys_sutvarkyti else 'Jie netvarkyti!'))
 
     def pervadinti_kintamuosius(self):
         # nebūtina, galima rankiniu būdu - Audrius
@@ -134,13 +123,13 @@ class Duomenys:
 
 
 def main():
-    duomenys2019 = Duomenys(2019)
-    #duomenys2019.info()
-    duomenys2019.tvarkyti()
-    duomenys2019.info()
-    duomenys2019.irasyti_csv('Sveikatos_duomenys_analizei.csv')
-    #df = duomenys2019.gauti_duomenis()
-    #print(df)
+    for metai in [2014, 2019]:
+        duomenys = Duomenys(metai)
+        duomenys.tvarkyti()
+        #duomenys.info()
+        duomenys.irasyti_csv(f'Sveikatos_duomenys_analizei_{metai}.csv')
+        #df = duomenys.gauti_duomenis()
+
 
 
 if __name__ == '__main__':
