@@ -7,9 +7,9 @@ class Duomenys:
     def __init__(self, metai):
         self.metai = metai
         self.csv_duomenys = os.path.join('duomenys',
-            str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
+                                         str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
         self.csv_aprašymai = os.path.join('duomenys',
-            str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
+                                          str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
         self.df = pd.DataFrame()
         self.kintamieji = [
             'pid', 'sex', 'age', 'm_k', 'hs1', 'hs2', 'pe6', 'sk1', 'al1', 'am3', 'bm1', 'bm2'
@@ -52,7 +52,7 @@ class Duomenys:
         self.ar_duomenys_sutvarkyti = True
         print(' - Duomenys baigti tvarkyti')
 
-    def irasyti_csv(self,csv_rinkmena):
+    def irasyti_csv(self, csv_rinkmena):
         self.df.to_csv(csv_rinkmena, index=False)
         print(f'{csv_rinkmena} irasyta sekmingai')
 
@@ -61,7 +61,9 @@ class Duomenys:
         self.df = pd.read_csv(self.csv_duomenys)
         # artinkti norimus kintamuosius - Audrius
         self.df = self.df[self.kintamieji]
+        # Prijungus vėlesnių metų duomenis, galėti atskirti juos
         self.df['Metai'] = self.metai
+        self.df['pid'] = self.metai * 100000 + self.df['pid']
         print(f'{self.metai} m. gyventojų sveikatos duomenys įkelti į vidinę strukūrą. ' +
               ('' if self.ar_duomenys_sutvarkyti else 'Jie netvarkyti!'))
 
@@ -76,7 +78,7 @@ class Duomenys:
 
         # tuščių ir praleistus reikšmių atmetimas - Mindaugas
         self.df = self.df.dropna()
-        #self.df = self.df[self.df.notnull().all(axis=1)]
+        # self.df = self.df[self.df.notnull().all(axis=1)]
 
         # Kai kuriuose kintamuosiuose neigiamomis reikšmėmis žymimi neanalizuotini duomenys, pvz.,
         # -1 Nenurodyta
@@ -123,13 +125,25 @@ class Duomenys:
 
 
 def main():
-    for metai in [2014, 2019]:
+    # nuskaityti didžiuosius duomenis, atsirinkti mums reikalingus,
+    # įrašyti į csv
+
+    csv_bazinis_vardas_saugojimui = 'Sveikatos_duomenys_analizei'
+    norimi_metai = [2014, 2019]
+    for i, metai in enumerate(norimi_metai):
         duomenys = Duomenys(metai)
         duomenys.tvarkyti()
-        #duomenys.info()
-        duomenys.irasyti_csv(f'Sveikatos_duomenys_analizei_{metai}.csv')
-        #df = duomenys.gauti_duomenis()
+        # duomenys.info()
+        duomenys.irasyti_csv(f'{csv_bazinis_vardas_saugojimui}_{metai}.csv')
+        if i == 0:
+            df = duomenys.gauti_duomenis()
+        else:
+            df1 = duomenys.gauti_duomenis()
+            df = pd.concat([df, df1], axis=0)  # prijungti eilutes
 
+    df.to_csv(f'{csv_bazinis_vardas_saugojimui}.csv')
+    print(f'Atrinktieji {", ".join(str(metai) for metai in norimi_metai)} m. '
+          f'duomenys sėkmingai įrašyti į „{csv_bazinis_vardas_saugojimui}.csv“')
 
 
 if __name__ == '__main__':
