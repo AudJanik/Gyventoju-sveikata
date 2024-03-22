@@ -94,6 +94,7 @@ def bendroji_analize(df):
     plt.title('Bendra sveikatos būklė' + metu_str, fontsize=20)
     plt.xlabel('Bendra sveikatos būklė')
     plt.ylabel('Asmenų skaičius')
+    plt.savefig('rezultatai/Sveikatos būklė' + metu_str + '.png')
     plt.show()
 
     """
@@ -105,6 +106,7 @@ def bendroji_analize(df):
     plt.title('Pasiskirstymas pagal lytį' + metu_str)
     plt.xlabel('Vyrai / moterys')
     plt.ylabel('Asmenų skaičius')
+    plt.savefig('rezultatai/Lytis' + metu_str + '.png')
     plt.show()
 
     """
@@ -116,6 +118,7 @@ def bendroji_analize(df):
     plt.title('Pasiskirstymas pagal gyvenvamą vietą' + metu_str)
     plt.ylabel('Asmenų skaičius')
     plt.xlabel('Miestas / Kaimas')
+    plt.savefig('rezultatai/Gyvenvietė' + metu_str + '.png')
     plt.show()
 
 
