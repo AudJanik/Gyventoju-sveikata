@@ -2,23 +2,32 @@ import duomenys
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 # import numpy as np
-# import os
 
 pd.set_option('display.max_columns', 30)
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.width', 500)
 
 
-def paimti_duomenis():
-    metai = 2019
-    df = duomenys.Duomenys(metai).gauti_sutvarkytus_duomenis()
-    # csv_rinkmena = 'Sveikatos_duomenys_analizei.csv'
-    # if not os.path.exists(csv_rinkmena):
-    #     print('Nerasta', csv_rinkmena)
-    #     exit(1)
-    # df = pd.read_csv(csv_rinkmena)
+def paimti_duomenis(metai=None):
+    csv_bazinis_vardas = 'Sveikatos_duomenys_analizei'
+    if metai is None:
+        csv_rinkmena = f'{csv_bazinis_vardas}.csv'
+    elif len(metai) == 1:
+        csv_rinkmena = f'{csv_bazinis_vardas}_{metai}.csv'
+    else:
+        print('Nurodyti keli metai, bet neaišku, ar būtent tie metai būtų jungtiniame CSV')
+        csv_rinkmena = f'{csv_bazinis_vardas}.csv'
+
+    if os.path.exists(csv_rinkmena):
+        df = pd.read_csv(csv_rinkmena)
+    elif len(metai) == 1:
+        df = duomenys.Duomenys(metai).gauti_sutvarkytus_duomenis()
+    else:
+        print('Nerasta', csv_rinkmena)
+        df = pd.DataFrame()  # FIXME: kitoje eilutėje bus klaida, nes nebus kintamųjų
 
     # Papildomai apskaičiuoti KMI
     df['KMI'] = df['Svoris, kg'] / ((df['Ūgis, cm'] / 100) ** 2)
@@ -118,6 +127,8 @@ def bendroji_analize(df):
 
 def koreliacine_analize(df, corr_kintamieji=[]):
     # Koreliacijos analizė.
+    if corr_kintamieji is None:
+        corr_kintamieji = [kintamasis for kintamasis in df]
     print()
 
     corr = df[corr_kintamieji].corr()
@@ -158,7 +169,6 @@ def koreliacine_analize(df, corr_kintamieji=[]):
 
     # Atlikite laiko analizę, siekiant nustatyti sveikatos rodiklių pokyčius per laiką.
     # Tai gali apimti tendencijų, sezoniškumo ir prognozių modeliavimą.
-
 
 
 def main():
