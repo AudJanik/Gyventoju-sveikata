@@ -124,6 +124,10 @@ def bendroji_analize(df):
 
 def koreliacine_analize(df, corr_kintamieji=[]):
     metai = unikalus_metai(df)
+    if len(metai) == 1:
+        metu_str = f' ({metai[0]} m.)'
+    else:
+        metu_str = f' ({", ".join(str(m) for m in metai)} m. kartu)'
 
     print('Atliekama koreliacinė analizė...')
     # Koreliacijos analizė.
@@ -166,6 +170,7 @@ def koreliacine_analize(df, corr_kintamieji=[]):
               f'stipriausia rasta koreliacija r={stipriausia_koreliacija:.3f}')
     plt.xlabel(corr_max_kint[1])
     plt.ylabel(corr_max_kint[0])
+    plt.savefig('rezultatai/Didžiausia koreliacija ' + metu_str + '.png')
     plt.show()
 
     # Atlikite laiko analizę, siekiant nustatyti sveikatos rodiklių pokyčius per laiką.
