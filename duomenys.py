@@ -4,18 +4,17 @@ import os
 
 class Duomenys:
     # Duomenys tik vieniems pasirinktiems metams
-    def __init__(self, metai):
+    def __init__(self, metai, kintamieji=None):
         self.metai = metai
-        self.csv_duomenys = os.path.join('duomenys',
-                                         str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
+        self.csv_duomenys = os.path.join('duomenys', str(metai) +
+                                         '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
         self.csv_aprašymai = os.path.join('duomenys',
                                           str(metai) + '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_kintamieji_ir_jų_paaiškinimai.csv')
         self.df = pd.DataFrame()
-        self.kintamieji = [
-            'pid', 'sex', 'age', 'm_k', 'hs1', 'hs2', 'pe6', 'sk1', 'al1', 'am3', 'bm1', 'bm2'
-        ]
-        # am3 atsakymų nėra >1000 žmonių
-        # dh4 atsakymų nėra >2000 žmonių
+        if kintamieji is None:
+            self.kintamieji = ['pid', 'sex', 'age', 'm_k', 'hs1', 'hs2', 'pe6', 'sk1', 'al1', 'am3', 'bm1', 'bm2']
+        else:
+            self.kintamieji = kintamieji
         self.atitikmenys = {'pid': 'ID',
                             'sex': 'Lytis',
                             'age': 'Amžius',
@@ -25,14 +24,13 @@ class Duomenys:
                             'pe6': 'Sportas',
                             'sk1': 'Rūkymas',
                             'al1': 'Alkoholis',
-                            'am3': 'Kartai pas šeimos gydytoją per 4 sav.',
+                            'am3': 'Kartai pas šeimos gydytoją per 4 sav.',  # am3 atsakymų nėra >1000 žmonių
                             'bm1': 'Ūgis, cm',
                             'bm2': 'Svoris, kg'
                             }
         self.kintamieji_išskirčių_tikrinimui = [
-            'Amžius',
-            'Kartai pas šeimos gydytoją per 4 sav.', 'Ūgis, cm', 'Svoris, kg'
-        ]
+            'Amžius', 'Kartai pas šeimos gydytoją per 4 sav.', 'Ūgis, cm', 'Svoris, kg'
+            ]
         self.df = pd.DataFrame()
         self.ar_duomenys_sutvarkyti = False
         self.csv2pd()  # nuskaitymas
