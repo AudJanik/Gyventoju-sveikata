@@ -18,19 +18,19 @@ Duomenys.py - duomenų nuskaitymas, kintamųjų atrinkimas, tvarkymas, 2014 ir 2
 
 Analize.py - bendroji aprašomoji statistika ir koreliacinė analizė
 
-Pasiskirstymas pagal lytį(1-vyras, 2-moteris)
+Pasiskirstymas pagal lytį (1-vyras, 2-moteris)
 
 ![paveikslas](rezultatai/Lytis%20(2014,%202019%20m.%20kartu).png)
 
 
 Pasiskirstymas pagal gyvenvietę (1-miestas, 2 - kaimas)
+
 ![paveikslas](rezultatai/Gyvenvietė%20(2014,%202019%20m.%20kartu).png)
 
 
 Koreliacinė analizė
 
 ![paveikslas](rezultatai/Didžiausia%20koreliacija%20%20(2014%20m.).png)
-
 ![paveikslas](rezultatai/Didžiausia%20koreliacija%20%20(2019%20m.).png)
 
 
