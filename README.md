@@ -1,10 +1,7 @@
 
-Projekto pavadinimas: Gyventojų sveikata
-
-
 Darbo autoriai: Mindaugas B., Audrius Janikunas, Valentina Verikė.
 
-Projekto tema: Lietuvos gyventojų sveikatos duomenų analizė
+# Lietuvos gyventojų sveikata
 
 Analizuojami: 2014 m. ir  2019 m. atlikto gyventojų sveikatos statistinio tyrimo duomenys. 
 
@@ -12,11 +9,21 @@ Darbas atliktas Python kalba, panaudojant bibliotekas: pandas, matplotlib, seabo
 
 
 
-PROJEKTO svarbiausios dalys:
+## PROJEKTO svarbiausios dalys:
 
-Duomenys.py - duomenų nuskaitymas, kintamųjų atrinkimas, tvarkymas, 2014 ir 2019 m. duomenų jungimas.
+### Duomenys
 
-Analize.py - bendroji aprašomoji statistika ir koreliacinė analizė
+`duomenys.py` - duomenų nuskaitymas, kintamųjų atrinkimas, tvarkymas, 2014 ir 2019 m. duomenų jungimas.
+
+`duomenys` - katalogas su pirminiais duomenimis
+
+### Analizė
+
+`analize.py` - bendroji aprašomoji statistika ir koreliacinė analizė
+
+### Rezultatai
+
+`rezultatai` - katalogas, kuriame patalpinti analizės grafikai:
 
 Pasiskirstymas pagal lytį (1-vyras, 2-moteris)
 
@@ -41,6 +48,6 @@ Bendra sveikatos būklė(1-labai gera, 2-gera, 3-vidutiniska, 4-bloga, 5-labai b
 
 ![paveikslas](rezultatai/Sveikatos%20būklė%20(2019%20m.).png)
 
+ ### Testasvimas
 
-
-test_duomenys.py - testasvimas
+`test_duomenys.py`
