@@ -22,7 +22,8 @@ def paimti_duomenis(metai=None):
         print('Įspėjimas: nurodyti keli metai, bet neaišku, ar būtent tie metai būtų jungtiniame CSV')
         csv_rinkmena = f'{csv_bazinis_vardas}.csv'
     else:
-        print('Netinkamai nurodyti analizuotini metai. Nurodykite skaičių arba nenurodykite nieko visiems duomenims paimti')
+        print(
+            'Netinkamai nurodyti analizuotini metai. Nurodykite skaičių arba nenurodykite nieko visiems duomenims paimti')
         return None
 
     if os.path.exists(csv_rinkmena):
@@ -42,22 +43,31 @@ def paimti_duomenis(metai=None):
 
 
 def bendroji_analize(df):
+    metai = unikalus_metai(df)
+    if len(metai) == 1:
+        metu_str = f' ({metai[0]} m.)'
+    else:
+        metu_str = f' ({", ".join(str(m) for m in metai)} m. kartu)'
+
     # Valentina
-    print('Atliekama bendroji aprašomoji statistinė analizė...')
+    print('Atliekama bendroji statistinė analizė...')
 
     bendras_apkaustuju_kiekis = df['ID'].count()
-    # print(f'Bendras aplaustuju_skaicius: {bendras_apkaustuju_kiekis}')
+    print(f'Bendras aplaustuju_skaicius: {bendras_apkaustuju_kiekis}')
+    print()
 
     lyciu_kategorijos = df.groupby(['Lytis'])['ID'].count()
     # print(lyciu_kategorijos)
 
     vyru_sveikatos_bukle = df[df['Lytis'] == 1].groupby(["Bendra sveikatos būklė", ]).agg(
         vyru=pd.NamedAgg(column="Lytis", aggfunc="count"))
-    # print(vyru_sveikatos_bukle)
+    print(vyru_sveikatos_bukle)
+    print()
     #
     moteru_sveikatos_bukle = df[df['Lytis'] == 2].groupby(["Bendra sveikatos būklė", ]).agg(
         moteru=pd.NamedAgg(column="Lytis", aggfunc="count"))
-    # # print(moteru_sveikatos_bukle)
+    print(moteru_sveikatos_bukle)
+    print()
 
     amzius = df['Amžius']
 
@@ -73,16 +83,17 @@ def bendroji_analize(df):
     # print(kategorijos)
 
     """
-    Bendra sveikatos būklė pagal amziu
+    Bendra sveikatos būklė
     1-labai gera, 2-gera, 3-vidutiniska, 4-bloga, 5-labai bloga
     """
 
     plt.figure(figsize=(10, 6))
-    plt.bar(df['Bendra sveikatos būklė'],
-            df['Amžius'], color='skyblue')
-    plt.title('Bendra sveikatos būklė pagal amžių', fontsize=20)
+    plt.hist(data=df,
+             x='Bendra sveikatos būklė',
+             color='skyblue')
+    plt.title('Bendra sveikatos būklė' + metu_str, fontsize=20)
     plt.xlabel('Bendra sveikatos būklė')
-    plt.ylabel('Amžius')
+    plt.ylabel('Asmenų skaičius')
     plt.show()
 
     """
@@ -90,10 +101,10 @@ def bendroji_analize(df):
     1-labai gera, 2-gera, 3-vidutiniska, 4-bloga, 5-labai bloga
     """
 
-    sns.barplot(data=df, x='Bendra sveikatos būklė', y='Amžius', hue='Lytis')
-    plt.title('bendra sveikatos būklė pagal lytį')
-    plt.xlabel('Bendra sveikatos būklė')
-    plt.ylabel('Amžius')
+    sns.barplot(data=df, y='Lytis', hue='Lytis')
+    plt.title('Pasiskirstymas pagal lytį' + metu_str)
+    plt.xlabel('Vyrai / moterys')
+    plt.ylabel('Asmenų skaičius')
     plt.show()
 
     """
@@ -101,35 +112,12 @@ def bendroji_analize(df):
     1-miestas, 2 - kaimas
     """
 
-    sns.barplot(data=df, x='Bendra sveikatos būklė', y='Amžius', hue='Miestas/Kaimas')
-    plt.title('bendra sveikatos būklė miestas/kaimas')
-    plt.xlabel('Bendra sveikatos būklė')
-    plt.ylabel('Amžius')
+    sns.barplot(data=df, y='Miestas/Kaimas', hue='Miestas/Kaimas')
+    plt.title('Pasiskirstymas pagal gyvenvamą vietą' + metu_str)
+    plt.ylabel('Asmenų skaičius')
+    plt.xlabel('Miestas / Kaimas')
     plt.show()
 
-    """
-    Lėtines ligos pagal amziu
-    Ar serga lėtinėmis ligomis: 1- Taip, 2 - ne
-    """
-
-    sns.barplot(x='Lėtines ligos', y='Amžius', data=df, hue='Amžius', palette='Set2', dodge=False)
-    plt.title('Lėtines ligos pagal amžių')
-    plt.ylabel('Amžius')
-    plt.xlabel('Lėtines ligos')
-    plt.legend([])
-    plt.tight_layout()
-    plt.show()
-
-    """
-    Bendra sveikatos būklė pagal amžiaus kategorijas
-
-    """
-
-    sns.barplot(data=df, x='Bendra sveikatos būklė', y='Lytis', hue=kategorijos)
-    plt.title('bendra sveikatos būklė pagal amžių')
-    plt.xlabel('Bendra sveikatos būklė')
-    plt.ylabel('Lytis')
-    plt.show()
 
 def koreliacine_analize(df, corr_kintamieji=[]):
     metai = unikalus_metai(df)
@@ -162,7 +150,7 @@ def koreliacine_analize(df, corr_kintamieji=[]):
     corr_max_lent = corr[corr.apply(abs) == stipriausia_koreliacija].dropna(how="all", axis=0).dropna(how="all", axis=1)
     # corr_max_lent1 = corr_max_lent.iloc[[0], [1]]  # 1x1 lentelė
     corr_max_kint = list(corr_max_lent.idxmax())  # du kintamieji
-    print(f'{metai + " m. gyventojų" if type(metai) is int else "Gyventojų"} sveikatos duomenyse '
+    print(f'{str(metai[0]) + " m. gyventojų" if len(metai) == 1 else "Gyventojų"} sveikatos duomenyse '
           f'stipriausia koreliacija rasta tarp \n  '
           f'„{corr_max_kint[0]}“ ir „{corr_max_kint[1]}“ '
           f'(r = {stipriausia_koreliacija:.3f})')
@@ -171,7 +159,7 @@ def koreliacine_analize(df, corr_kintamieji=[]):
 
     plt.figure(figsize=(5, 5))
     plt.scatter(df[corr_max_kint[1]], df[corr_max_kint[0]], alpha=0.10)
-    plt.title(f'{metai + " m. gyventojų" if type(metai) is int else "Gyventojų"} sveikatos duomenys:\n'
+    plt.title(f'{(str(metai[0]) + " m. gyventojų") if len(metai) == 1 else "Gyventojų"} sveikatos duomenys:\n'
               f'stipriausia rasta koreliacija r={stipriausia_koreliacija:.3f}')
     plt.xlabel(corr_max_kint[1])
     plt.ylabel(corr_max_kint[0])
@@ -180,8 +168,10 @@ def koreliacine_analize(df, corr_kintamieji=[]):
     # Atlikite laiko analizę, siekiant nustatyti sveikatos rodiklių pokyčius per laiką.
     # Tai gali apimti tendencijų, sezoniškumo ir prognozių modeliavimą.
 
+
 def unikalus_metai(df):
     return df['Metai'].unique().tolist()
+
 
 def main():
     corr_kintamieji = ['Amžius', 'KMI', 'Sportas']
