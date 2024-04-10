@@ -4,7 +4,7 @@ import os
 
 class Duomenys:
     # Duomenys tik vieniems pasirinktiems metams
-    def __init__(self, metai, kintamieji=None, rodyti_pagalba=1):
+    def __init__(self, metai, kintamieji=None, atitikmenys=None, rodyti_pagalba=1):
         self.metai = metai
         self.csv_duomenys = os.path.join('duomenys', str(metai) +
                                          '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
@@ -78,6 +78,8 @@ class Duomenys:
                             # SVEIKATOS PRIEŽIŪRA
                             'am3': 'Kartai pas šeimos gydytoją per 4 sav.',  # am3 atsakymų nėra >1000 žmonių
                             }
+        if atitikmenys and type(atitikmenys) is dict: # prijungti papildomus atitikmenis, jei yra
+            self.atitikmenys = {**self.atitikmenys, **atitikmenys}
         self.kintamieji_išskirčių_tikrinimui = [
             'Amžius', 'Kartai pas šeimos gydytoją per 4 sav.', 'Ūgis, cm', 'Svoris, kg'
             ]
