@@ -15,14 +15,18 @@ class Duomenys:
             self.kintamieji = ['pid', 'sex', 'age', 'm_k', 'hs1', 'hs2', 'pe6', 'sk1', 'al1', 'am3', 'bm1', 'bm2']
         else:
             self.kintamieji = kintamieji
-        self.atitikmenys = {'pid': 'ID',
+        self.atitikmenys = {
+                            # PAGRINDINIAI SOCIALINIAI KINTAMIEJI
+                            'pid': 'ID',
                             'sex': 'Lytis',
                             'age': 'Amžius',
                             'm_k': 'Miestas/Kaimas',
+
+                            # SVEIKATOS KINTAMIEJI
                             'hs1': 'Bendra sveikatos būklė',
                             'hs2': 'Lėtines ligos',
 
-                            # Ligos ir lėtinės būklės:
+                            # Ligos ir lėtinės būklės: Ar per pastaruosius 12 mėn. sirgote kuria nors iš išvardytų ligų?
                             'cd1a': 'Astma',
                             'cd1b': 'Bronchitas',
                             'cd1c': 'Miokardo infarktas',
@@ -39,12 +43,30 @@ class Duomenys:
                             'cd1n': 'Inkstų problemos',
                             'cd1o': 'Depresija',
 
+                            # Nelaimingi atsitikimai: Ar per pastaruosius 12 mėn. Jums buvo nutikęs kuris nors iš
+                            # išvardytų nelaimingų atsitikimų, kurio metu buvote sužeistas (-a)?
+                            # (Įskaitant apsinuodijimą, gyvūnų arba vabzdžių sukeltą žalą.
+                            # Neįskaitant kitų asmenų tyčiniais veiksmais sukeltų sužalojimų)
+                            'ac1a': 'Eismo įvyis',  # a) Kelių eismo įvykis
+                            'ac1b': 'Nelaimė namuose',  # b) Nelaimingas atsitikimas namuose
+                            'ac1c': 'Nelaimė darbe',  # c) Nelaimingas atsitikimas laisvalaikio metu
+
+                            # Ar dėl šio nelaimingo atsitikimo Jums reikėjo medicinos pagalbos?
+                            'ac2': 'Medicininė pagalba po nelaimės',  # 1 ir 2 – taip, 3 - ne
+
+                            # SVEIKATĄ LEMIANTYS VEIKSNIAI
+                            'bm1': 'Ūgis, cm',
+                            'bm2': 'Svoris, kg',
                             'pe6': 'Sportas',
+                            'dh1': 'Vaisų vartojimo dažnumas',  # 2019 m.
+                            'fv1': 'Vaisų vartojimo dažnumas',  # 2014 m.
+                            'dh3': 'Daržovių vartojimo dažnumas',  # 2019 m.
+                            'fv3': 'Daržovių vartojimo dažnumas',  # 2014 m.
                             'sk1': 'Rūkymas',
                             'al1': 'Alkoholis',
+            
+                            # SVEIKATOS PRIEŽIŪRA
                             'am3': 'Kartai pas šeimos gydytoją per 4 sav.',  # am3 atsakymų nėra >1000 žmonių
-                            'bm1': 'Ūgis, cm',
-                            'bm2': 'Svoris, kg'
                             }
         self.kintamieji_išskirčių_tikrinimui = [
             'Amžius', 'Kartai pas šeimos gydytoją per 4 sav.', 'Ūgis, cm', 'Svoris, kg'
