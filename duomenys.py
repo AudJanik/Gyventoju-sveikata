@@ -61,7 +61,8 @@ class Duomenys:
                             'ac1b': 'Nelaimė namuose',  # b) Nelaimingas atsitikimas namuose
                             'ac1c': 'Nelaimė darbe',  # c) Nelaimingas atsitikimas laisvalaikio metu
 
-                            # Ar dėl šio nelaimingo atsitikimo Jums reikėjo medicinos pagalbos?
+                            # 2014: Ar dėl šio nelaimingo atsitikimo Jums reikėjo medicinos pagalbos?
+                            # 2019: ... dėl sunkiausio nelaimingo atsitikimo per pastaruosius 12 mėn.
                             'ac2': 'Medicininė pagalba po nelaimės',  # 1 ir 2 – taip, 3 - ne
 
                             # SVEIKATĄ LEMIANTYS VEIKSNIAI
