@@ -119,7 +119,11 @@ class Duomenys:
         self.kodavimo_keitimas()
         self.pervadinti_kintamuosius()
         self.valyti()  # valymas
-        self.atmesti_isskirtis(self.kintamieji_išskirčių_tikrinimui)
+        kintamieji_išskirčių_tikrinimui = set(self.df.columns).intersection(self.kintamieji_išskirčių_tikrinimui)
+        if kintamieji_išskirčių_tikrinimui:
+            self.atmesti_isskirtis(kintamieji_išskirčių_tikrinimui)
+        else:
+            print(' - Tarp pasirinktų kintamųjų nebuvo tokių, kurie pažymėti išskirčių atmetimui. Galite kviesti .atmesti_isskirtis() atskirai.')
         self.ar_duomenys_sutvarkyti = True
         print(' - Duomenys baigti tvarkyti')
 
