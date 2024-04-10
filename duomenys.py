@@ -15,6 +15,16 @@ class Duomenys:
             self.kintamieji = ['pid', 'sex', 'age', 'm_k', 'hs1', 'hs2', 'pe6', 'sk1', 'al1', 'am3', 'bm1', 'bm2']
         else:
             self.kintamieji = kintamieji
+
+        # kodavimo_keitimas()
+        self.kintamieji_taip_ne = [
+            # 'sex', 'm_k',  # lytis ir miestas/kaimas nėra taip/ne, tačiau irgi dvireikšmiai
+            'cd1a', 'cd1b', 'cd1c', 'cd1d', 'cd1e', 'cd1f', 'cd1g',
+            'cd1h', 'cd1i', 'cd1j', 'cd1k', 'cd1l', 'cd1m', 'cd1n', 'cd1o',
+            'ac1a', 'ac1b', 'ac1c'
+            ]
+
+        # pervadinti_kintamuosius()
         self.atitikmenys = {
                             # PAGRINDINIAI SOCIALINIAI KINTAMIEJI
                             'pid': 'ID',
@@ -83,7 +93,24 @@ class Duomenys:
         self.df.info()
         print()
 
+    def kodavimo_keitimas(self):
+        # Pradiniuose duomenyse kai kurie kintamieji užkoduoti: 1=Taip, 2=Ne.
+        # Čia 2=Ne pakeiskime į 0=Ne
+        kintamieji_su_pakeistu_kodavimu = []
+        for k in self.df:
+            if k in self.kintamieji_taip_ne:
+                self.df[k] = abs(self.df[k] - 2)
+                kintamieji_su_pakeistu_kodavimu.append(k)
+        # specialus atvejis 'ac2' - pagalba po nelaimingo atsitikimo
+        if 'ac2' in self.df:
+            # 1,2 -> 1 „taip“, -2,3 -> 0 „ne“
+            self.df['ac2'] =  self.df['ac2'].apply(lambda x: int((x > 0) & (x < 2)))
+            kintamieji_su_pakeistu_kodavimu.append('ac2')
+        if kintamieji_su_pakeistu_kodavimu:
+            print(' - Pakeistas kintamųjų kodavimas:', kintamieji_su_pakeistu_kodavimu)
+
     def tvarkyti(self):
+        self.kodavimo_keitimas()
         self.pervadinti_kintamuosius()
         self.valyti()  # valymas
         self.atmesti_isskirtis(self.kintamieji_išskirčių_tikrinimui)
