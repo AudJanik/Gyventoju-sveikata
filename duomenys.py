@@ -4,7 +4,7 @@ import os
 
 class Duomenys:
     # Duomenys tik vieniems pasirinktiems metams
-    def __init__(self, metai, kintamieji=None):
+    def __init__(self, metai, kintamieji=None, rodyti_pagalba=1):
         self.metai = metai
         self.csv_duomenys = os.path.join('duomenys', str(metai) +
                                          '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
@@ -84,6 +84,12 @@ class Duomenys:
         self.df = pd.DataFrame()
         self.ar_duomenys_sutvarkyti = False
         self.csv2pd()  # nuskaitymas
+
+        if rodyti_pagalba:
+            if self.ar_duomenys_sutvarkyti:
+                print('Norėdami gauti duomenis, naudokite .gauti_duomenis()')
+            else:
+                print('Norėdami gauti sutvarkytus duomenis, naudokite .gauti_sutvarkytus_duomenis()')
 
     def info(self):
         print()
@@ -197,7 +203,7 @@ def main():
 
     df = pd.DataFrame()  # rezertuoti kintamąjį, kad PyCharm nerodytų įspėjimų
     for i, metai in enumerate(norimi_metai):
-        duomenys = Duomenys(metai)
+        duomenys = Duomenys(metai, rodyti_pagalba=0)
         duomenys.tvarkyti()
         # duomenys.info()
         duomenys.irasyti_csv(f'{csv_bazinis_vardas_saugojimui}_{metai}.csv')
