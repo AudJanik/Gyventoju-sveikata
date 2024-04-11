@@ -4,7 +4,7 @@ import os
 
 class Duomenys:
     # Duomenys tik vieniems pasirinktiems metams
-    def __init__(self, metai, kintamieji=None, atitikmenys=None, rodyti_pagalba=1):
+    def __init__(self, metai, kintamieji=None, atitikmenys=None, rodyti_pagalba=True):
         self.metai = metai
         self.csv_duomenys = os.path.join('duomenys', str(metai) +
                                          '_m._atlikto_gyventojų_sveikatos_statistinio_tyrimo_duomenys.csv')
@@ -72,11 +72,11 @@ class Duomenys:
             # Fizinis aktyvumas
             'pe1': 'Fizinės veiklos intensyvumas dirbant',  # bet 4 kategorija išsiskiria (1- sėdi/stovi, 2- vid.sunkumo fiz. darbas, 3- sunkus fiz. darbas, 4- neatliekamos darbinės užduotys)
             'pe2': 'Ėjimas, d./sav.',  # Kiek dienų per savaitę einate pėsčiomis >= 10 min. be pertraukos?
-            'pe3': 'Ėjimo trukmė',  # Kiek laiko per dieną paprastai užtrunkate eidamas (-a) pėsčiomis? 1) 10 – 29 min.; 2) 30 – 59 min; 3) Nuo 1 val. iki 2 val.; 4) Nuo 2 val. iki 3 val.
+            'pe3': 'Ėjimo trukmė',  # Kiek laiko per dieną paprastai užtrunkate eidamas (-a) pėsčiomis? 1) 10 – 29 min.; 2) 30 – 59 min; 3) Nuo 1 val. iki 2 val.; 4) Nuo 2 val. iki 3 val.; 5) 3 val. ar daugiau
             'pe4': 'Važiavimas dviračiu, d./sav',  # Kiek dienų per įprastą savaitę važiuojate dviračiu >= 10 min. be pertraukos?
-            'pe5': 'Važiavimo dviračiu trukmė',  # Kiek laiko per dieną paprastai užtrunkate važiuodamas (-a) dviračiu? 1) 10 – 29 min.; 2) 30 – 59 min; 3) Nuo 1 val. iki 2 val.; 4) Nuo 2 val. iki 3 val.
-            'pe7': 'Sportavimo trukmė, HHMM',  # Kiek laiko per įprastą savaitę sportuojate, užsiimate kūno rengyba ar aktyvia laisvalaikio veikla?
+            'pe5': 'Važiavimo dviračiu trukmė',  # Kiek laiko per dieną paprastai užtrunkate važiuodamas (-a) dviračiu? 1) 10 – 29 min.; 2) 30 – 59 min; 3) Nuo 1 val. iki 2 val.; 4) Nuo 2 val. iki 3 val.; 5) 3 val. ar daugiau
             'pe6': 'Sportavimas, d./sav.',  # Kiek dienų per įprastą savaitę atliekate konkrečius veiksmus, skirtus sustiprinti raumenis, pvz., darote ištvermės ar jėgos pratimus?
+            'pe7': 'Sportavimo trukmė, HHMM',  # Kiek laiko per įprastą savaitę sportuojate, užsiimate kūno rengyba ar aktyvia laisvalaikio veikla?
             'pe8': 'Raumenų stiprinimas, d./sav.',  # Kiek dienų per įprastą savaitę atliekate konkrečius veiksmus, skirtus sustiprinti raumenis, pvz., darote ištvermės ar jėgos pratimus?
 
             'dh1': 'Vaisų vartojimo dažnumas',  # 2019 m.
@@ -120,10 +120,18 @@ class Duomenys:
             if k in self.kintamieji_taip_ne:
                 self.df[k] = abs(self.df[k] - 2)
                 kintamieji_su_pakeistu_kodavimu.append(k)
+
+        # 'pe2' ir 'pe3' apjungimas, kad neatmestų duomenų dėl neigiamų reikšmių
+        if ('pe2' in self.df.columns) and ('pe3' in self.df.columns):
+            self.df['pe3'] = self.df.apply(lambda row: 0 if row['pe2'] == 0 else row['pe3'], axis=1)
+        # 'pe4' ir 'pe5' apjungimas, kad neatmestų duomenų dėl neigiamų reikšmių
+        if ('pe4' in self.df.columns) and ('pe5' in self.df.columns):
+            self.df['pe5'] = self.df.apply(lambda row: 0 if row['pe4'] == 0 else row['pe5'], axis=1)
+
         # specialus atvejis 'ac2' - pagalba po nelaimingo atsitikimo
         if 'ac2' in self.df:
             # 1,2 -> 1 „taip“, -2,3 -> 0 „ne“
-            self.df['ac2'] =  self.df['ac2'].apply(lambda x: int((x > 0) & (x < 2)))
+            self.df['ac2'] = self.df['ac2'].apply(lambda x: int((x > 0) & (x < 2)))
             kintamieji_su_pakeistu_kodavimu.append('ac2')
         if kintamieji_su_pakeistu_kodavimu:
             print(' - Pakeistas kintamųjų kodavimas:', kintamieji_su_pakeistu_kodavimu)
