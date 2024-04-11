@@ -6,7 +6,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import seaborn as sns
 from duomenys import Duomenys
-from analize import unikalus_metai
 
 
 def ar_sveikata_gera(x):
@@ -43,7 +42,7 @@ def paimti_duomenis(metai):
     return df
 
 
-def klasifikacija(df):
+def klasifikacija(df, metai):
     y = df['Bendra sveikatos būklė'].apply(ar_sveikata_gera)
     X = df.drop(columns=['Bendra sveikatos būklė', 'Metai', 'Darbo tipas', 'Ėjimo trukmė', 'Mynimo trukmė'])
     feature_names = X.columns
@@ -57,7 +56,6 @@ def klasifikacija(df):
     feature_importances = pd.DataFrame(clf.feature_importances_, index=feature_names,
                                        columns=['importance']).sort_values(by='importance', ascending=False)
 
-    metai = unikalus_metai(df)
     if len(metai) == 1:
         metu_str = f' ({metai[0]} m.)'
     else:
@@ -81,14 +79,16 @@ def main():
         print()
         df1 = paimti_duomenis(metai)
         if df1 is not None:
-            print(f'\nANALIZUOJAMI METAI IMANT DUOMENIS ATSKIRAI: {unikalus_metai(df1)}')
-            klasifikacija(df1)
+            unikalus_metai = df1['Metai'].unique().tolist()
+            print(f'\nANALIZUOJAMI METAI IMANT DUOMENIS ATSKIRAI: {unikalus_metai}')
+            klasifikacija(df1, unikalus_metai)
             if df is None:
                 df = df1
             else:
                 df = pd.concat([df, df1], axis=0)  # prijungti eilutes
-    print(f'\nANALIZUOJAMI METAI IMANT DUOMENIS KARTU: {unikalus_metai(df)}\n')
-    klasifikacija(df)
+    unikalus_metai = df1['Metai'].unique().tolist()
+    print(f'\nANALIZUOJAMI METAI IMANT DUOMENIS KARTU: {unikalus_metai}\n')
+    klasifikacija(df, unikalus_metai)
 
 
 if __name__ == '__main__':
