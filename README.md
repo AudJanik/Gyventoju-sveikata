@@ -19,7 +19,11 @@ Darbas atliktas Python kalba, panaudojant bibliotekas: pandas, matplotlib, seabo
 
 ### Analizė
 
-`analize.py` - bendroji aprašomoji statistika ir koreliacinė analizė
+`analize.py` - analizės iškvietimas:
+
+`analize_bendra_sveikata_ir_letines_ligos.py` - bendroji aprašomoji statistika ir koreliacinė analizė
+
+`klasifikacija_pg_fizini_aktyvuma.py` - gerą sveikatos būklę lemiančių fizinio aktyvumo veiksnių klasifikacija
 
 ### Rezultatai
 
@@ -47,6 +51,14 @@ Bendra sveikatos būklė(1-labai gera, 2-gera, 3-vidutiniska, 4-bloga, 5-labai b
 ![paveikslas](rezultatai/Sveikatos%20būklė%20(2014%20m.).png)
 
 ![paveikslas](rezultatai/Sveikatos%20būklė%20(2019%20m.).png)
+
+
+Gerą sveikatos būklę lemiantys fizinio aktyvumo veiksniai:
+
+![paveikslas](rezultatai/Gera%20sveikata%20ir%20fizinis%20aktyvumas%20(2014%20m.).png)
+
+![paveikslas](rezultatai/Gera%20sveikata%20ir%20fizinis%20aktyvumas%20(2019%20m.).png)
+
 
  ### Testasvimas
 
