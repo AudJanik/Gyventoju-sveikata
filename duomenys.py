@@ -26,59 +26,69 @@ class Duomenys:
 
         # pervadinti_kintamuosius()
         self.atitikmenys = {
-                            # PAGRINDINIAI SOCIALINIAI KINTAMIEJI
-                            'pid': 'ID',
-                            'sex': 'Lytis',
-                            'age': 'Amžius',
-                            'm_k': 'Miestas/Kaimas',
+            # PAGRINDINIAI SOCIALINIAI KINTAMIEJI
+            'pid': 'ID',
+            'sex': 'Lytis',
+            'age': 'Amžius',
+            'm_k': 'Miestas/Kaimas',
 
-                            # SVEIKATOS KINTAMIEJI
-                            'hs1': 'Bendra sveikatos būklė',
-                            'hs2': 'Lėtines ligos',
+            # SVEIKATOS KINTAMIEJI
+            'hs1': 'Bendra sveikatos būklė',
+            'hs2': 'Lėtines ligos',
 
-                            # Ligos ir lėtinės būklės: Ar per pastaruosius 12 mėn. sirgote kuria nors iš išvardytų ligų?
-                            'cd1a': 'Astma',
-                            'cd1b': 'Bronchitas',
-                            'cd1c': 'Miokardo infarktas',
-                            'cd1d': 'Širdies liga',
-                            'cd1e': 'Padidėjęs kraujospūdis',
-                            'cd1f': 'Insultas',
-                            'cd1g': 'Artrozė',
-                            'cd1h': 'Nugaros liga',
-                            'cd1i': 'Kaklo liga',
-                            'cd1j': 'Cukrinis diabetas',
-                            'cd1k': 'Alergija',
-                            'cd1l': 'Kepenų cirozė',
-                            'cd1m': 'Šlapimo nelaikymas',
-                            'cd1n': 'Inkstų problemos',
-                            'cd1o': 'Depresija',
+            # Ligos ir lėtinės būklės: Ar per pastaruosius 12 mėn. sirgote kuria nors iš išvardytų ligų?
+            'cd1a': 'Astma',
+            'cd1b': 'Bronchitas',
+            'cd1c': 'Miokardo infarktas',
+            'cd1d': 'Širdies liga',
+            'cd1e': 'Padidėjęs kraujospūdis',
+            'cd1f': 'Insultas',
+            'cd1g': 'Artrozė',
+            'cd1h': 'Nugaros liga',
+            'cd1i': 'Kaklo liga',
+            'cd1j': 'Cukrinis diabetas',
+            'cd1k': 'Alergija',
+            'cd1l': 'Kepenų cirozė',
+            'cd1m': 'Šlapimo nelaikymas',
+            'cd1n': 'Inkstų problemos',
+            'cd1o': 'Depresija',
 
-                            # Nelaimingi atsitikimai: Ar per pastaruosius 12 mėn. Jums buvo nutikęs kuris nors iš
-                            # išvardytų nelaimingų atsitikimų, kurio metu buvote sužeistas (-a)?
-                            # (Įskaitant apsinuodijimą, gyvūnų arba vabzdžių sukeltą žalą.
-                            # Neįskaitant kitų asmenų tyčiniais veiksmais sukeltų sužalojimų)
-                            'ac1a': 'Eismo įvyis',  # a) Kelių eismo įvykis
-                            'ac1b': 'Nelaimė namuose',  # b) Nelaimingas atsitikimas namuose
-                            'ac1c': 'Nelaimė darbe',  # c) Nelaimingas atsitikimas laisvalaikio metu
+            # Nelaimingi atsitikimai: Ar per pastaruosius 12 mėn. Jums buvo nutikęs kuris nors iš
+            # išvardytų nelaimingų atsitikimų, kurio metu buvote sužeistas (-a)?
+            # (Įskaitant apsinuodijimą, gyvūnų arba vabzdžių sukeltą žalą.
+            # Neįskaitant kitų asmenų tyčiniais veiksmais sukeltų sužalojimų)
+            'ac1a': 'Eismo įvyis',  # a) Kelių eismo įvykis
+            'ac1b': 'Nelaimė namuose',  # b) Nelaimingas atsitikimas namuose
+            'ac1c': 'Nelaimė darbe',  # c) Nelaimingas atsitikimas laisvalaikio metu
 
-                            # 2014: Ar dėl šio nelaimingo atsitikimo Jums reikėjo medicinos pagalbos?
-                            # 2019: ... dėl sunkiausio nelaimingo atsitikimo per pastaruosius 12 mėn.
-                            'ac2': 'Medicininė pagalba po nelaimės',  # 1 ir 2 – taip, 3 - ne
+            # 2014: Ar dėl šio nelaimingo atsitikimo Jums reikėjo medicinos pagalbos?
+            # 2019: ... dėl sunkiausio nelaimingo atsitikimo per pastaruosius 12 mėn.
+            'ac2': 'Medicininė pagalba po nelaimės',  # 1 ir 2 – taip, 3 - ne
 
-                            # SVEIKATĄ LEMIANTYS VEIKSNIAI
-                            'bm1': 'Ūgis, cm',
-                            'bm2': 'Svoris, kg',
-                            'pe6': 'Sportas',
-                            'dh1': 'Vaisų vartojimo dažnumas',  # 2019 m.
-                            'fv1': 'Vaisų vartojimo dažnumas',  # 2014 m.
-                            'dh3': 'Daržovių vartojimo dažnumas',  # 2019 m.
-                            'fv3': 'Daržovių vartojimo dažnumas',  # 2014 m.
-                            'sk1': 'Rūkymas',
-                            'al1': 'Alkoholis',
-            
-                            # SVEIKATOS PRIEŽIŪRA
-                            'am3': 'Kartai pas šeimos gydytoją per 4 sav.',  # am3 atsakymų nėra >1000 žmonių
-                            }
+            # SVEIKATĄ LEMIANTYS VEIKSNIAI
+            'bm1': 'Ūgis, cm',
+            'bm2': 'Svoris, kg',
+
+            # Fizinis aktyvumas
+            'pe1': 'Fizinės veiklos intensyvumas dirbant',  # bet 4 kategorija išsiskiria (1- sėdi/stovi, 2- vid.sunkumo fiz. darbas, 3- sunkus fiz. darbas, 4- neatliekamos darbinės užduotys)
+            'pe2': 'Ėjimas, d./sav.',  # Kiek dienų per savaitę einate pėsčiomis >= 10 min. be pertraukos?
+            'pe3': 'Ėjimo trukmė',  # Kiek laiko per dieną paprastai užtrunkate eidamas (-a) pėsčiomis? 1) 10 – 29 min.; 2) 30 – 59 min; 3) Nuo 1 val. iki 2 val.; 4) Nuo 2 val. iki 3 val.
+            'pe4': 'Važiavimas dviračiu, d./sav',  # Kiek dienų per įprastą savaitę važiuojate dviračiu >= 10 min. be pertraukos?
+            'pe5': 'Važiavimo dviračiu trukmė',  # Kiek laiko per dieną paprastai užtrunkate važiuodamas (-a) dviračiu? 1) 10 – 29 min.; 2) 30 – 59 min; 3) Nuo 1 val. iki 2 val.; 4) Nuo 2 val. iki 3 val.
+            'pe7': 'Sportavimo trukmė, HHMM',  # Kiek laiko per įprastą savaitę sportuojate, užsiimate kūno rengyba ar aktyvia laisvalaikio veikla?
+            'pe6': 'Sportavimas, d./sav.',  # Kiek dienų per įprastą savaitę atliekate konkrečius veiksmus, skirtus sustiprinti raumenis, pvz., darote ištvermės ar jėgos pratimus?
+            'pe8': 'Raumenų stiprinimas, d./sav.',  # Kiek dienų per įprastą savaitę atliekate konkrečius veiksmus, skirtus sustiprinti raumenis, pvz., darote ištvermės ar jėgos pratimus?
+
+            'dh1': 'Vaisų vartojimo dažnumas',  # 2019 m.
+            'fv1': 'Vaisų vartojimo dažnumas',  # 2014 m.
+            'dh3': 'Daržovių vartojimo dažnumas',  # 2019 m.
+            'fv3': 'Daržovių vartojimo dažnumas',  # 2014 m.
+            'sk1': 'Rūkymas',
+            'al1': 'Alkoholis',
+
+            # SVEIKATOS PRIEŽIŪRA
+            'am3': 'Kartai pas šeimos gydytoją per 4 sav.',  # am3 atsakymų nėra >1000 žmonių
+        }
         if atitikmenys and type(atitikmenys) is dict: # prijungti papildomus atitikmenis, jei yra
             self.atitikmenys = {**self.atitikmenys, **atitikmenys}
         self.kintamieji_išskirčių_tikrinimui = [
